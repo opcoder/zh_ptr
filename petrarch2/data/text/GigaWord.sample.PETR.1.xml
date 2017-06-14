@@ -1,0 +1,23 @@
+<!-- # PETRARCH GigaWord sample file
+# These are a very very tiny, as in "fair use" on the "research" clause of the copyright 
+# statutes sample of sentences from the LDC Gigaword corpus file AFP0808-02.txt that 
+# demonstrate some of the basic coding capabilities of PETRARCH. While these are actual 
+# sentences, this sample is intended as a "proof-of-concept" only and are not 
+# representative of the overall performance of the system, which is still in development 
+# mode and many pattern-matching features are not fully implemented.
+# 
+# For further information on the GigaWord corpus:  http://catalog.ldc.upenn.edu/LDC2011T07
+# Last update: 28 Feb 2014
+-->
+<Sentences>
+<Sentence date = "20080804" id ="AFP0808020625_4" source = "AFP" sentence = "True">
+<Text>
+The stopover came as the US leader prepared to attend the Beijing Olympics, an
+event which will test his vow to keep politics out of the Games.
+</Text>
+<Parse>
+(ROOT (IP (NP (NR 乌克兰) (CC 与) (NR 欧盟)) (VP (NP (NT 周二)) (VV 批准) (AS 了) (NP (QP (CD 一) (CLP (M 项))) (ADJP (JJ 全面)) (NN 协议))) (PU 。)))
+</Parse>
+</Sentence>
+
+</Sentences>

@@ -818,3 +818,20 @@ def convert_code(code, forward=1):
             return reverse[code]
 
         return 0  # hex(code)
+
+
+# added by Wang Changbao to support chinese parser
+
+from ltp_utils import ltp_api
+from stanford_parser.parser import Parser
+
+sf_parser = Parser()
+def stanford_parse(events):
+    for src, evts in events.items():
+        for id, sent in evts['sents'].items():
+            content = sent['content']
+            seg = ltp_api.segment(content)
+            sent['parsed'] = sf_parser.parser.parse(' '.join(seg)).flatten().toString().replace('IP', 'S').replace(')', ' )')
+            print(' '.join(seg))
+    print('done')
+    return events

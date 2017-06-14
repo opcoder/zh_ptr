@@ -59,7 +59,8 @@ class Phrase:
         An instantiated Phrase object
 
         """
-        self.label = label if not label == "MD" else "VB"
+        self.label = label if label not in PETRglobals.LabelsConverter else PETRglobals.LabelsConverter[label]
+        # self.label = label if not label == "MD" else "VB"
         self.children = []
         self.phrasetype = label[0]
         self.annotation = ""
@@ -483,7 +484,8 @@ class NounPhrase(Phrase):
                 value = child.get_text()
                 text_children += value[0].split()
                 NPcodes += value[1]
-            elif child.label[:2] in ["JJ", "DT", "NN"]:
+            elif child.label[:2] in PETRglobals.NounLeafLabels:
+            # elif child.label[:2] in ["JJ", "DT", "NN", 'NR']:
                 text_children += child.get_text().split()
 
             elif child.label == "PP":
@@ -1167,7 +1169,7 @@ class VerbPhrase(Phrase):
                 Code described by this verb, best read in hex
         """
 
-#        self.get_code = self.return_code
+        self.get_code = self.return_code
         meta = []
         dict = PETRglobals.VerbDict['verbs']
         if 'AND' in map(lambda a: a.text, self.children):
@@ -1532,6 +1534,7 @@ class Sentence:
         self.longlat = (-1, -1)
         self.verbs = []  # 16.06.23: nice, but is this actually used anywhere?
         self.txt = ""
+        # self.tree = self.str_to_tree(self.treestr.strip())
         self.tree = self.str_to_tree(parse.strip())
         self.verb_analysis = {}
         self.events = []

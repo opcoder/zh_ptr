@@ -98,3 +98,13 @@ stanfordnlp = ''
 CodePrimer = '=#='   # separates actor code from root and text strings
 RootPrimer = CodePrimer + ':'  # start of root string
 TextPrimer = CodePrimer + '+'  # start of text string
+
+NounLeafLabels = ['JJ', 'DT', 'NN', 'NR']
+LabelsConverter = {
+    'MD': 'VB',
+    'DNP': 'NP',
+    'VV': 'VB',
+    'VA': 'AV',
+    'PN': 'PRP',
+    'IP': 'S'
+}

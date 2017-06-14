@@ -1,0 +1,8 @@
+INFO 2017-04-09 21:14:36,033: Running
+INFO 2017-04-09 21:14:36,035: Using default config file.
+INFO 2017-04-09 21:14:36,036: Reading CAMEO.2.0.txt
+INFO 2017-04-09 21:14:39,003: Reading Phoenix.agents.txt
+
+WARNING 2017-04-09 21:14:39,030: Codes are required for agents in .agents file ; line skipped
+INFO 2017-04-09 21:14:39,035: Reading Phoenix.discards.txt
+INFO 2017-04-09 21:14:39,039: Reading Phoenix.IssueCoding.txt

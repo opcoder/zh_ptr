@@ -1,0 +1,194 @@
+The Chinese Penn Treebank Tag Set
+1        Part-Of-Speech tags: 33 tags
+ 
+标记	英语解释	中文解释
+AD	adverbs	副词
+AS	Aspect marker	体态词，体标记（例如：了，在，着，过）
+BA	把 in ba-const	“把”，“将”的词性标记
+CC	Coordinating conjunction	并列连词，“和”
+CD	Cardinal numbers	数字，“一百”
+CS	Subordinating conj	从属连词 （例子：若，如果，如…）
+DEC	的 for relative-clause etc	“的”词性标记
+DEG	Associative 的	联结词“的”
+DER	得 in V-de construction, and V-de-R	“得”
+DEV	地 before VP	地
+DT	Determiner	限定词，“这”
+ETC	Tag for words 等，等等 in coordination phrase	等，等等
+FW	Foreign words	例子：ISO
+IJ	interjection	感叹词
+JJ	Noun-modifier other than nouns	 
+LB	被 in long bei-construction	例子：被，给
+LC	Localizer	定位词，例子：“里”
+M	Measure word (including classifiers)	量词，例子：“个”
+MSP	Some particles	例子：“所”
+NN	Common nouns	普通名词
+NR	Proper nouns	专有名词
+NT	Temporal nouns	时序词，表示时间的名词
+OD	Ordinal numbers	序数词，“第一”
+ON	Onomatopoeia	拟声词，“哈哈”
+P	Prepositions (excluding 把 and 被)	介词
+PN	pronouns	代词
+PU	Punctuations	标点
+SB	被in long bei-construction	例子：“被，给”
+SP	Sentence-final particle	句尾小品词，“吗”
+VA	Predicative adjective	表语形容词，“红”
+VC	Copula 是	系动词，“是”
+VE	有 as the main verb	“有”
+VV	Other verbs	其他动词
+
+
+2 Syntactic tags: 23 tags  句法标记
+2.1 Tags for phrase: 17 tags 短语句法标记
+ 
+标记	英语解释	中文解释
+ADJP	Adjective phrase	形容词短语
+ADVP	Adverbial phrase headed by AD (adverb)	由副词开头的副词短语
+CLP	Classifier phrase	量词短语
+CP	Clause headed by C (complementizer)	由补语引导的补语从句
+DNP	Phrase formed by “XP+DEG”	 
+DP	Determiner phrase	限定词短语
+DVP	Phrase formed by “XP+DEV”	 
+FRAG	fragment	 
+IP	Simple clause headed by I (INFL 或其曲折成分)	 
+LCP	Phrase formed by “XP+LC”	LC 位置词
+LST	List marker	列表标记，如“--”
+NP	Noun phrase	名词短语
+PP	Preposition phrase	介词短语
+PRN	Parenthetical	括号中的，插入的
+QP	Quantifier phrase	量词短语
+UCP	unidentical coordination phrase	非对等同位语短语
+VP	Verb phrase	动词短语
+ 
+2.2 Tags for verb compounds: 6 tags  动词复合6个标记
+标记	英文解释	中文解释
+VCD	Coordinated verb compound	并列动词复合，例子：
+“(VCD (VV 观光) (VV 游览))”
+VCP	Verb compounds formed by VV+VC	动词+是，例子：
+“(VCP (VV 估计) (VC 为))”
+VNV	Verb compounds formed by A-not-A or A-one-A	“(VNV (VV 看) (CD 一) (VV 看))”
+“(VNV (VE 有) (AD 没) (VE 有))”
+VPT	Potential form V-de-R or V-bu-R	V-de-R, V不R
+“(VPT (VV 卖) (AD 不) (VV 完))”
+“(VPT (VV 出) (DER 得) (VV 起))”
+VRD	Verb resultative compound	动词结果复合，
+“(VRD (VV 反映) (VV 出))”
+“(VRD (VV 卖) (VV 完))”
+VSB	Verb compounds formed by a modifier + a head	定语+中心词
+“(VSB (VV 举债) (VV 扩张))”
+ 
+ 
+ 
+ 
+3 Functional tags: 26 tags 功能标记26个
+ 
+标记	英语解释	中文解释
+ADV	Adverbial	副词的
+APP	appositive	同位的
+BNF	Beneficiary	受益
+CND	Condition	条件
+DIR	Direction	方向
+EXT	Extent	范围
+FOC	Focus	焦点
+HLN	Headline	标题
+IJ	Interjective	插入语
+IMP	Imperative	祈使句
+IO	Indirect object	间接宾语
+LGS	Logic subject	逻辑主语
+LOC	Locative	处所
+MNR	Manner	方式
+OBJ	Direct object	直接宾语
+PN	Proper nouns	专有名词
+PRD	Predicate	谓词
+PRP	Purpose or reason	目的或理由
+Q	Question	疑问
+SBJ	Subject	主语
+SHORT	Short term	缩略形式
+TMP	Temporal	时间
+TPC	Topic	话题
+TTL	Title	标题
+WH	Wh-phrase	Wh-短语
+VOC	Vocative (special form of a noun, a pronoun or an adjective used when addressing or invoking a person or thing )	呼格
+ 
+4 Empty categories (null elements): 7 tags 空范畴标记
+标记	英文解释	中文解释
+*OP*	operator	在relative constructions相关结构中的操作符
+*pro*	dropped argument	丢掉的论元
+*PRO*	used in control structures	在受控结构中使用
+*RNR*	right node raising	右部节点提升的空范畴
+*T*	trace of A’-movement	A’移动的虚迹，话题化
+*	trace of A-movement	A移动的虚迹
+*?*	other unknown empty categories	其他未知的空范畴
+
+###########part2 english##########################
+
+Bracket Labels
+
+Clause Level
+
+S - simple declarative clause, i.e. one that is not introduced by a (possible empty) subordinating conjunction or a wh-word and that does not exhibit subject-verb inversion.
+SBAR - Clause introduced by a (possibly empty) subordinating conjunction.
+SBARQ - Direct question introduced by a wh-word or a wh-phrase. Indirect questions and relative clauses should be bracketed as SBAR, not SBARQ.
+SINV - Inverted declarative sentence, i.e. one in which the subject follows the tensed verb or modal.
+SQ - Inverted yes/no question, or main clause of a wh-question, following the wh-phrase in SBARQ.
+
+Phrase Level
+
+ADJP - Adjective Phrase.
+ADVP - Adverb Phrase.
+CONJP - Conjunction Phrase.
+FRAG - Fragment.
+INTJ - Interjection. Corresponds approximately to the part-of-speech tag UH.
+LST - List marker. Includes surrounding punctuation.
+NAC - Not a Constituent; used to show the scope of certain prenominal modifiers within an NP.
+NP - Noun Phrase. 
+NX - Used within certain complex NPs to mark the head of the NP. Corresponds very roughly to N-bar level but used quite differently.
+PP - Prepositional Phrase.
+PRN - Parenthetical. 
+PRT - Particle. Category for words that should be tagged RP. 
+QP - Quantifier Phrase (i.e. complex measure/amount phrase); used within NP.
+RRC - Reduced Relative Clause. 
+UCP - Unlike Coordinated Phrase. 
+VP - Vereb Phrase. 
+WHADJP - Wh-adjective Phrase. Adjectival phrase containing a wh-adverb, as in how hot.
+WHAVP - Wh-adverb Phrase. Introduces a clause with an NP gap. May be null (containing the 0 complementizer) or lexical, containing a wh-adverb such as how or why.
+WHNP - Wh-noun Phrase. Introduces a clause with an NP gap. May be null (containing the 0 complementizer) or lexical, containing some wh-word, e.g. who, which book, whose daughter, none of which, or how many leopards.
+WHPP - Wh-prepositional Phrase. Prepositional phrase containing a wh-noun phrase (such as of which or by whose authority) that either introduces a PP gap or is contained by a WHNP.
+X - Unknown, uncertain, or unbracketable. X is often used for bracketing typos and in bracketing the...the-constructions.
+Word level
+
+CC - Coordinating conjunction
+CD - Cardinal number
+DT - Determiner
+EX - Existential there
+FW - Foreign word
+IN - Preposition or subordinating conjunction
+JJ - Adjective
+JJR - Adjective, comparative
+JJS - Adjective, superlative
+LS - List item marker
+MD - Modal
+NN - Noun, singular or mass
+NNS - Noun, plural
+NNP - Proper noun, singular
+NNPS - Proper noun, plural
+PDT - Predeterminer
+POS - Possessive ending
+PRP - Personal pronoun
+PRP$ - Possessive pronoun (prolog version PRP-S)
+RB - Adverb
+RBR - Adverb, comparative
+RBS - Adverb, superlative
+RP - Particle
+SYM - Symbol
+TO - to
+UH - Interjection
+VB - Verb, base form
+VBD - Verb, past tense
+VBG - Verb, gerund or present participle
+VBN - Verb, past participle
+VBP - Verb, non-3rd person singular present
+VBZ - Verb, 3rd person singular present
+WDT - Wh-determiner
+WP - Wh-pronoun
+WP$ - Possessive wh-pronoun (prolog version WP-S)
+WRB - Wh-adverb

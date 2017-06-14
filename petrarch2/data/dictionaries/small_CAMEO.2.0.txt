@@ -1,0 +1,207 @@
+# CAMEO VERB PATTERN DICTIONARY
+# This dictionary is a composite of the TABARI CAMEO dictionaries and several synonym
+# sets, primarily from WordNet. It is formatted for the PETRARCH automated coding program,
+# version 1.0: consult the general documentation and specifically the internal comments in
+# the routine PETRreader.read_verb_dictionary() for details of the formatting and
+# interpretation of the file.
+#
+# Patterns in this file were initially derived from the long-standing CAMEO verb file
+# CAMEO.091003.master.verbs. In the comments section of the patterns, the verb[s] where
+# the pattern was originally found is shown, followed by any coder information on the
+# pattern.
+#
+# Notes on dictionary status <14.06.10>
+#  There are a *lot* of unnecessary patterns in here, either leftovers for earlier
+#    noun-verb disambiguation -- PETRARCH handles this with the Treebank parsing, not
+#    with the dictionaries -- or patterns which simply go to the default code in the
+#    verb block. At this point we are just trying to get this running: it could use a
+#    lot of additional work.
+#
+# Major update <15.04.30>
+# Multi-word forms -- these have a '+' in them -- were not being handled consistently.
+# The program was revised to generate regular forms; all irregular forms were added;
+# assorted phrases, notably those involved 'RE_' (which is what 're-...' ends up as)
+# where the verb was the final word were correctly marked, and an assortment of
+# multi-word noun phrases inherited from TABARI, which wasn't as picky about such
+# things, were deleted.
+#
+# Dictionary development has been funded by the Political Science and Methods,
+# Measurement and Statistics programs of the U.S. National Science Foundation through
+# Grants SES89-10738, SES90-25130 (Data Development in International Relations Project),
+# SBR-9410023, SBE-0455158, SBE-0527564 (Human and Social Dynamics), SES-1004414 and
+# SES-1259190.
+#
+# The MIT License (MIT)
+#
+# Copyright (c) 2015 Open Event Data Alliance
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+# the Software, and to permit persons to whom the Software is furnished to do so,
+# subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+# FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+# COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+# IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+# CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+# LAST UPDATE: 30 April 2015
+
+
+#part1
+
+####### SYNONYM SETS #######
+
+# &AUXVERB1_
+# 曾是
+# 
+# &AUXVERB2_
+# 将
+# 将要
+# 
+# &AUXVERB3_
+# 
+# 
+# &TOBEVERB_
+# 是
+# 
+# &PREPOSIT1_
+# 附近
+
+&CURRENCY
++钱
++货币
++财经
++金钱
++通货
++现款
++现金
++阿富汗尼
++铢
++泰国铢
++泰铢
++巴波亚
++比尔
++比特币
++加纳塞地
++达拉西
++第纳尔
++金币
++迪拉姆
++迪尔汗
++美元
++越南盾
++多布拉
++欧元
++福林
++瓜拉尼
++荷兰盾
++弗罗林
++基那
++基普
++克郎
++挪威币
++克瓦查
++缅币
++缅元
++列克
++伦皮拉
++利昂
++列弗
++里兰吉尼
++里拉
++梅蒂尔
++奈拉
++奈及利亚奈拉
++努扎姆
++努尔特鲁姆
++乌吉亚
++澳元
++澳门币
++澳门元
++玻利维亚诺
++比索
++镑
++磅
++英镑
++普拉
++令吉
++林吉特
++卢比
++卢布
++马纳特
++拉里
++坚戈
++立特
++格里夫纳
++印尼盾
++人民币
++舍客勒
++谢克尔
++先令
++孟加拉塔卡
++图格里克
++日元
++兹罗提
++波兰币
++罗提
+
+####### VERB PATTERNS #######
+
+
+---  GO_SOMEWHERE   [040]  ---
+撤离
+撤回
+离去
+离开
+消失
+走开
+出去
+前进
+转到
+留下
+丢弃
+退出
+抽出
+退席
+出席
+照顾
+参加
+出发
+外出
+出口
+开始
+着手
+从事
+旅行
+迂回
+旅游
+游览
+- * 法院                                             [---]         # WENT_TO
+- * 调查                                             [---]         # WENT_TO
+- * 仪式                                             [017]         # ATTEND
+- * 纪念会                                           [017]         # ATTEND
+- * 开幕式                                           [017]         # ATTEND
+- * 葬礼                                             [017]         # ATTEND
+- * 行动                                             [039]         # EMBARK
+- * 紧急 会议                                        [040]         # GO
+- * 访问                                             [042:043]     # EMBARK
+- * 会议                                             [042:043]     # ATTEND
+- * 旅行                                             [042:043]     # EMBARK
+- * 会面                                             [044:044]     # ATTEND
+- * 会议                                             [044]         # ATTEND
+- * 峰会                                             [044]         # ATTEND
+- * 比赛                                             [080]         # PULLED_OUT
+- * 基地                                             [0874]        # PULLED_OUT
+- * 外交 攻势                                        [124]         # EMBARK
+- * 谈判                                             [164]         # PULLED_OUT
+- * 受审                                             [:173]        # GO
+- * 奥运会 											 [080]	       # ATTEND
+

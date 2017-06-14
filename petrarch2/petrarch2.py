@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
-from __future__ import unicode_literals
+# from __future__ import print_function
+# from __future__ import unicode_literals
 
 import os
 import sys
@@ -65,33 +65,33 @@ def get_version():
 
 def open_tex(filename):
     fname = open(filename, 'w')
-    '''fname.write('Run time: ',
-    print("""
-\\documentclass[11pt]{article}
-\\usepackage{tikz-qtree}
-\\usepackage{ifpdf}
-\\usepackage{fullpage}
-\\usepackage[landscape]{geometry}
-\\ifpdf
-    \\pdfcompresslevel=9
-    \\usepackage[pdftex,     % sets up hyperref to use pdftex driver
-            plainpages=false,   % allows page i and 1 to exist in the same document
-            breaklinks=true,    % link texts can be broken at the end of line
-            colorlinks=true,
-            pdftitle=My Document
-            pdfauthor=My Good Self
-           ]{hyperref}
-    \\usepackage{thumbpdf}
-\\else
-    \\usepackage{graphicx}       % to include graphics
-    \\usepackage{hyperref}       % to simplify the use of \href
-\\fi
-
-\\title{Petrarch Output}
-\\date{}
-
-\\begin{document}
-""", file = fname)'''
+#     '''fname.write('Run time: ',
+#     print("""
+# \\documentclass[11pt]{article}
+# \\usepackage{tikz-qtree}
+# \\usepackage{ifpdf}
+# \\usepackage{fullpage}
+# \\usepackage[landscape]{geometry}
+# \\ifpdf
+#     \\pdfcompresslevel=9
+#     \\usepackage[pdftex,     % sets up hyperref to use pdftex driver
+#             plainpages=false,   % allows page i and 1 to exist in the same document
+#             breaklinks=true,    % link texts can be broken at the end of line
+#             colorlinks=true,
+#             pdftitle=My Document
+#             pdfauthor=My Good Self
+#            ]{hyperref}
+#     \\usepackage{thumbpdf}
+# \\else
+#     \\usepackage{graphicx}       % to include graphics
+#     \\usepackage{hyperref}       % to simplify the use of \href
+# \\fi
+#
+# \\title{Petrarch Output}
+# \\date{}
+#
+# \\begin{document}
+# """, file = fname)'''
 
     return fname
 
@@ -99,7 +99,7 @@ def open_tex(filename):
 def close_tex(fname):
 
     return
-    print("\n\\end{document})", file=fname)
+    # print("\n\\end{document})", file=fname)
 
 
 # ========================== PRIMARY CODING FUNCTIONS ====================== #
@@ -210,7 +210,9 @@ def do_coding(event_dict):
             if 'parsed' in event_dict[key]['sents'][sent]:
                 if 'config' in val['sents'][sent]:
                     for _, config in event_dict[key]['sents'][sent]['config'].items():
-                        change_Config_Options(config)
+                        pass
+                        # comment to
+                        # change_Config_Options(config)
 
                 SentenceID = '{}_{}'.format(key, sent)
                 SentenceText = event_dict[key]['sents'][sent]['content']
@@ -460,7 +462,9 @@ def main():
         run(paths, out, cli_args.parsed)
 
     else:
-        run(paths, out, True)  # <===
+        # run(paths, out, True)  # <===
+        # chinese try
+        run(paths, out, False)  # <===
 
     print("Coding time:", time.time() - start_time)
 
@@ -531,7 +535,6 @@ def run_pipeline(data, out_file=None, config=None, write_output=True,
                                                     'PETR_config.ini'))
 
     read_dictionaries()
-
     logger.info('Hitting read events...')
     events = PETRreader.read_pipeline_input(data)
     if parsed:

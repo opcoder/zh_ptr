@@ -56,6 +56,9 @@ except ImportError:
 import PETRglobals
 import utilities
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # ================== STRINGS ================== #
 
@@ -616,7 +619,8 @@ def read_issue_list(issue_path):
 
         forms = [target]
         madechange = True
-        while madechange:  # iterate until no more changes to make
+        # no need for chinese
+        while False and madechange:  # iterate until no more changes to make
             ka = 0
             madechange = False
             while ka < len(forms):
@@ -676,7 +680,8 @@ def read_issue_list(issue_path):
 
 def make_plural_noun(noun):
     """ Create the plural of a synonym noun st """
-
+    return noun
+    # no needed for in chinese
     if noun[-1] == '_' or noun[0] == '{':
         return None
     if 'Y' == noun[-1]:
@@ -867,7 +872,11 @@ def read_verb_dictionary(verb_path):
 
                 pre = segs[0].split()
                 pre = resolve_patseg(pre)
-                post = segs[1].split()
+                try:
+                    post = segs[1].split()
+                except Exception as e:
+                    print(' '.join(segs))
+                    raise e
                 code = post.pop()
                 post = resolve_patseg(post)
 
@@ -958,7 +967,7 @@ def read_verb_dictionary(verb_path):
             block_meaning = line.strip()
         elif syn and line.startswith("+"): #read SYNONYM SETS
             term = line.strip()[1:]
-            
+            term = unicode(term)
             if "_" in term[-1] and "_" in term[:-1]:
                 temp = term[:-1]
                 if len(temp.replace("_", " ").split()) > 1:
@@ -1003,45 +1012,47 @@ def read_verb_dictionary(verb_path):
             back = []
             compound = 0
             stem = words[0]
-            if "_" in stem:
-                # We're dealing with a compound verb
-                #                print(stem)
-                segs = stem.split('+')
-                front = segs[0].split('_')
-                back = segs[1].split('_')[1:]
-                stem = segs[1].split('_')[0]
-                compound = 1
+            # if "_" in stem:
+            #     # We're dealing with a compound verb
+            #     #                print(stem)
+            #
+            #     segs = stem.split('+')
+            #     front = segs[0].split('_')
+            #     back = segs[1].split('_')[1:]
+            #     stem = segs[1].split('_')[0]
+            #     compound = 1
 
             if words[-1].startswith("["):
                 code = words.pop()
 
-            if not (len(words) > 1 or '{' in word):
-
-                if stem.endswith("S") or stem.endswith("X") or stem.endswith("Z"):
-                    words.append(stem + "ES")
-                elif stem.endswith("Y"):
-                    words.append(stem[:-1] + "IES")
-                else:
-                    words.append(stem + "S")
-
-                if stem.endswith("E"):
-                    words.append(stem + "D")
-                else:
-                    words.append(stem + "ED")
-
-                if stem.endswith("E") and not stem[-2] in "AEIOU":
-                    words.append(stem[:-1] + "ING")
-                else:
-                    words.append(stem + "ING")
+            # no need for chinese
+            # if not (len(words) > 1 or '{' in word):
+            #
+            #     if stem.endswith("S") or stem.endswith("X") or stem.endswith("Z"):
+            #         words.append(stem + "ES")
+            #     elif stem.endswith("Y"):
+            #         words.append(stem[:-1] + "IES")
+            #     else:
+            #         words.append(stem + "S")
+            #
+            #     if stem.endswith("E"):
+            #         words.append(stem + "D")
+            #     else:
+            #         words.append(stem + "ED")
+            #
+            #     if stem.endswith("E") and not stem[-2] in "AEIOU":
+            #         words.append(stem[:-1] + "ING")
+            #     else:
+            #         words.append(stem + "ING")
 
             for w in words:
                 wstem = w
-                if "_" in w:
-                    segs = w.split('+')
-                    front = segs[0].split('_')
-                    back = segs[1].split('_')[1:]
-
-                    wstem = segs[1].split('_')[0]
+                # if "_" in w:
+                #     segs = w.split('+')
+                #     front = segs[0].split('_')
+                #     back = segs[1].split('_')[1:]
+                #
+                #     wstem = segs[1].split('_')[0]
 
                 path = PETRglobals.VerbDict['verbs']
                 path = path.setdefault(wstem, {})
@@ -1430,13 +1441,14 @@ def _read_verb_dictionary(verb_path):
                 vroot = verb[plind:verb.find('_', plind)]
             else:
                 vroot = verb[plind:]
-            forms.append(verb.replace(vroot, vroot + "S"))
-            if vroot[-1] == 'E':  # root ends in 'E'
-                forms.append(verb.replace(vroot, vroot + "D"))
-                forms.append(verb.replace(vroot, vroot[:-1] + "ING"))
-            else:
-                forms.append(verb.replace(vroot, vroot + "ED"))
-                forms.append(verb.replace(vroot, vroot + "ING"))
+            # no need for chinese
+            # forms.append(verb.replace(vroot, vroot + "S"))
+            # if vroot[-1] == 'E':  # root ends in 'E'
+            #     forms.append(verb.replace(vroot, vroot + "D"))
+            #     forms.append(verb.replace(vroot, vroot[:-1] + "ING"))
+            # else:
+            #     forms.append(verb.replace(vroot, vroot + "ED"))
+            #     forms.append(verb.replace(vroot, vroot + "ING"))
 
         for phrase in forms:
             if '+' in phrase:  # otherwise not in correct form so skip it
@@ -1474,6 +1486,9 @@ def _read_verb_dictionary(verb_path):
     def make_verb_forms(loccode, line):
         """ Create the regular forms of a verb. """
         global verb, theverb
+        add_dict_tree([], verb, theverb, loccode, dict='verbs', line=line)
+        return
+        # no need for chinese
         vroot = verb
         vscr = vroot + \
             "S" if vroot[-1] not in ["S", "X", "Z"] else vroot + "ES"
@@ -1495,7 +1510,8 @@ def _read_verb_dictionary(verb_path):
 
     def make_plural(st):
         """ Create the plural of a synonym noun st """
-
+        # no need for chinese
+        return st
         if 'Y' == st[-1]:
             return st[:-1] + 'IES'  # space is added below
         elif 'S' == st[-1]:
@@ -2091,8 +2107,9 @@ def read_agent_dictionary(agent_path):
                 plural = agent[:-1] + 'S'
 
         store_agent(agent, code)
-        if len(plural) > 0:
-            store_agent(plural + ' ', code)
+        # no need for chinese
+        # if len(plural) > 0:
+        #     store_agent(plural + ' ', code)
 
         line = read_FIN_line()
 

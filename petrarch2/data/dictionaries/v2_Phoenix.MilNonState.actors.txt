@@ -1,0 +1,883 @@
+#part1
+阿布_尼达尔_组织 [IMGMUSALQ] # kkl 21 Mar 13
++阿拉伯_革命_旅
++阿拉伯_革命_委员会
++法塔赫_革命_委员会
++社会主义_革命_组织_穆斯林
+
+亚丁湾_伊斯兰军 [FRAREB] # kkl 21 Mar 13
++穆罕默德军
++巴基斯坦
+
+无政府主义_派系 [GRCREB] # kkl 21 Mar 13
+
+无政府主义_解放旅 [GRCREB] # kkl 21 Mar 13
+
+无政府主义_街头_巡逻 [GRCREB] # kkl 21 Mar 13
+
+无政府主义_斗争 [GRCREB] # kkl 21 Mar 13
+
+无政府主义者_攻击群 [GRCREB] # kkl 21 Mar 13
++无政府主义_攻击组
++无政府主义者_攻击组
+
+反_权威_组织 [GRCREB] # kkl 21 Mar 13
+
+反_帝国主义 [ITAREB] # kkl 21 Mar 13
+
+反_种族主义_游击队 [ITAREB] # kkl 21 Mar 13
+
+反_国家_行为 [GRCREB] # kkl 21 Mar 13
+
+反_犹太_复国主义_运动 [ITAREB] # kkl 21 Mar 13
++反_资本主义
++反对_资本主义
+
+伊斯兰 [DZAREB] # kkl 21 Mar 13
+
+欧语系_国家 [USAREB] # kkl 21 Mar 13
+
+巴斯克_祖国 [ESPREB] # kkl 21 Mar 13
++巴斯克
++埃塔
+
+博科_圣地 [NGAREB]
+
+战斗_无产阶级 [ITAREB] # kkl 21 Mar 13
++战士_战斗
++纵火犯
++革命_人民_解放党
+
+自由_战士 [GRCREB] # kkl 21 Mar 13
+
+哈马斯 # kkl 21 Mar 13
++伊斯兰_抵抗运动
++阿克萨_基金会
+	[PSEREBHMS]
+谢赫・艾哈迈德・雅辛
++艾哈迈德・亚辛
++祖赫里
++萨米祖赫_里
+	[PSEREBHMS 19870101-20040322]
+
+耶路撒冷 [COLREB]
++耶路撒冷营
++耶路撒冷_旅
+	[PSEREBHMS] # Distinguish between Hamas PTY and REB?
+
+阿富汗_自由_战士_组织_喀麦隆 [SASREB] # kkl 21 Mar 13
++伊斯兰_自由_战士_组织
+
+英国_伊斯兰_大会党 [KKLREB] # kkl 21 Mar 13
+
+国际_团结 [ITAREB] # kkl 21 Mar 13
+
+爱尔兰_民族_解放军 [WEUREB] # kkl 21 Mar 13
+
+反_帝国主义_国际_旅 [TURREB] # kkl 21 Mar 13
++默罕默德_军队
+
+美国_党骑士 [USAREB] # kkl 21 Mar 13
++美国_党骑士
++美国_帝国_党
+
+库尔德_工人党 [TURREB] # kkl 21 Mar 13
++库尔德_自由_民主_国会
++库尔德_人民_会议
++库尔德斯坦_人民_代表大会
++天神_军队
++军队
++拉什卡_塔伊巴_组织_劳动法
++科西嘉_民族_解放阵线
+
+新_红色_旅_共产主义_战士 [ITAREB] # kkl 21 Mar 13
++武装_共产主义_战士
++新_红色_旅_建设_共产党_战斗
+
+新_革命_斗争 [GRCREB] # kkl 21 Mar 13
+
+橙色_志愿者 [GBRREB] # kkl 21 Mar 13
+
+推翻_无政府主义_派系 [GRCREB] # kkl 21 Mar 13
+
+巴勒斯坦_伊斯兰_圣战_组织 [MEAREB] # kkl 21 Mar 13
+
+人民_解放军_库尔德斯坦_地区 [TURREB] # kkl 21 Mar 13
++库尔德_民族_自由军
++人民_防卫_力量
+
+人民_革命_军队_哥伦比亚 [KKLREB] # kkl 21 Mar 13
+
+巴勒斯坦_人民_解放阵线 [MEAREB] # kkl 21 Mar 13
+
+无产阶级_报复 [GRCREB] # kkl 21 Mar 13
+
+爱尔兰_共和军 [WEUREB] # kkl 21 Mar 13
++意大利_红色_旅
++红色_兵团
+
+得克萨斯共和国 [USAREB] # kkl 21 Mar 13
++得克萨斯共和国_临时政府
+
+哥伦比亚_革命 [COLREB] # kkl 21 Mar 13
++哥伦比亚_革命_人民军
+共产主义_革命_阵线 [ITAREB] # kkl 21 Mar 13
+
+列宁主义_革命旅 [ITAREB] # kkl 21 Mar 13
+
+革命_人民_斗争 [GRCREB] # kkl 21 Mar 13
++革命_斗争
+
+无产阶级_革命_行动 [ITAREB] # kkl 21 Mar 13
+
+革命_无产阶级 [ITAREB] # kkl 21 Mar 13
+
+革命_暴力集团 [GRCREB] # kkl 21 Mar 13
+
+撒丁岛人_自治_运动 [ITAREB] # kkl 21 Mar 13#
+
+自卫_科尔多瓦_乌拉巴 [COLREB] # kkl 21 Mar 13
+
+警长_地方_保安队 [USAREB] # kkl 21 Mar 13
+
+南_伦敦_德里_志愿者 [GBRREB] # kkl 21 Mar 13
++南_伦敦_德里_新教_志愿者
++土耳其_共产党_工党_列宁主义
++毛派_共产党
++土耳其_共产党_马克思主义_列宁主义
++土耳其_工人_农民_解放军
+
+卡宾达飞_解放阵线 [AGOREB] # kkl 21 Mar 13
+
+阿尔斯特_国防_协会_阿尔斯特_自由_战士 [GBRREB] # kkl 21 Mar 13
+
+阿尔斯特_志愿者_力量 [GBRREB] # kkl 21 Mar 13
+
+美国_哥伦比亚_自卫队 [COLREB] # kkl 21 Mar 13
+
+白色_爱国_党 [USAREB] # kkl 21 Mar 13
++法塔赫
+
+巴勒斯坦_人民_解放阵线_总指挥部 [MEAREB] # kkl 21 Mar
+
+阿拉伯_解放阵线 [MEAREB] # kkl 21 Mar 13
+
+黑色_九月 [MEAREB] # kkl 21 Mar 13
++黑色_九月_组织
+
+巴勒斯坦_解放阵线 [INTREB] # kkl 21 Mar 13
+
+巴德尔_迈因霍夫_集团 [WEUREB] # kkl 21 Mar 13
++巴德尔_迈因霍夫_帮
++红军派
+
+查尔斯・马特尔_集团 [FRAREB] # kkl 21 Mar 13
++查尔斯・马特尔_俱乐部
+
+集团_巴枯宁_格但斯克_巴黎_危地马拉_萨尔瓦多 [FRAREB] # kkl 21 Mar 13
+
+瓜德罗普_岛_解放军 [GLPREB] # kkl 21 Mar 13
+
+犹太_防御_联盟 [USAREB] # kkl 21 Mar 13
+
+十月_反_法西斯_抵抗组织 [ESPREB] # kkl 21 Mar 13
+
+西班牙_巴斯克营 [WEUREB] # kkl 21 Mar 13
+
+信_美国_解放_组织 [SEAREB] # kkl 21 Mar 13
+
+摩洛_民族_解放阵线 [PHLREB] # kkl 21 Mar 13
++莫罗_解放阵线
+
+新_人民_军队 [PHLREB] # kkl 21 Mar 13
+
+阿布沙耶夫_组织 [PHLREB] # kkl 21 Mar 13
+
+国家_解放军_哥伦比亚 [COLREB] # kkl 21 Mar 13
+曼努埃尔・罗德里格斯_爱国_阵线 [CHLREB] # kkl 21 Mar 13
+
+危地马拉_工党 [GTMREB] # kkl 21 Mar 13
+
+反对派 [GTMREB] # kkl 21 Mar 13
+
+法拉本多_马蒂_民族_解放阵线 [SLVREB] # kkl 21 Mar 13
+
+全国_抵抗 [SLVREB] # kkl 21 Mar 13
++雷西斯滕西亚
+
+人民_解放军_部队_萨尔瓦多 [KKLREB] # kkl 21 Mar 13
++流行_法拉本多_马蒂_民族_解放_力量
++受_欢迎_解放_力量
+
+图帕克 [URYREB] # kkl 21 Mar 13
++民族_解放运动
+
+国家_解放军_玻利维亚 [BOLREB] # kkl 21 Mar 13
+
+#part2
++友好_国家_玻利维亚
+
+人民_革命_军队 [KKLREB] # kkl 21 Mar 13
+
+桑地诺 [NICREB] # kkl 21 Mar 13
++桑地诺_民族_解放阵线
++桑地诺_支持者
+
+亚美尼亚_秘密_军队 [INTREB] # kkl 21 Mar 13
+
+
+
+奥利_组织 [FRAREB] # kkl 21 Mar 13
+
+新_亚美尼亚_组织 [WEUREB] # kkl 21 Mar 13
+
+亚美尼亚_革命_军队 [USAREB] # kkl 21 Mar 13
+
+亚美尼亚_正义_突击队 [INTREB] # kkl 21 Mar 13
+
+黎巴嫩_武装_革命_派 [LBNREB] # kkl 21 Mar 13
+
+伊拉克_伊斯兰_行动_运动 [MEAREB] # kkl 21 Mar 13
+
+伊斯兰_拯救_阵线 [INTREB] # kkl 21 Mar 13
++伊斯兰_救世军
+
+共产主义_战士_团 [BELREB] # kkl 21 Mar 13
+
+非洲人_国民大会 [ZAFREB] # kkl 21 Mar 13
++南非_当地_国民大会
+
+厄立特里亚_解放阵线 [EAFREB] # kkl 21 Mar 13
+
+莫桑比克_全国_抵抗运动 [SAFREB] # kkl 21 Mar 13
+
++民族_解放军队
+
+安德烈斯·卡斯特罗 [NICREB] # kkl 21 Mar 13
+
+真主党 [LBNREB] # kkl 21 Mar 13
++解放_真主
++伊斯兰_圣战_组织
++地球_上_组织_压迫
++革命_正义_组织
++哈桑纳斯鲁拉
++赛义德·哈桑·纳斯鲁拉
++谢赫·纳斯鲁拉
++纳斯鲁拉
++谢赫·哈桑·纳斯鲁拉
++谢赫_哈桑_纳斯鲁拉
++赛义德·纳斯鲁拉
+
+亚利桑那州_爱国者 [USAREB] # kkl 21 Mar 13
+
+美国_自由_阵线 [USAREB] # kkl 21 Mar 13
++武装_抵抗_单位
++抵抗运动
++革命_战斗_组织
++红色_抵抗
+
+俄克拉何马州_宪法_民兵 [USAREB] # kkl 21 Mar 13
+
+菲尼亚斯_牧师 [USAREB] # kkl 21 Mar 13
++菲尼亚斯_祭司
+
+华盛顿州_民兵 [USAREB] # kkl 21 Mar 13
+
+蒙大拿_自由民 [USAREB] # kkl 21 Mar 13
+
+登山者_民兵 [USAREB] # kkl 21 Mar 13
+
+内斯托尔·巴斯萨莫拉_委员会 [BOLREB] # kkl 21 Mar 13
+
+雅利安_人_共和军 [USAREB] # kkl 21 Mar 13
++雅利安人_抵抗军
+
+爱国者_委员会 [USAREB] # kkl 21 Mar 13
++明尼苏达州_爱国者_委员会
+
+机械_堪萨斯_民兵 [USAREB] # kkl 21 Mar 13
++堪萨斯_民兵
++堪萨斯州_南部_地区_民兵
+
+
+
+帝国_光头党 [USAREB] # kkl 21 Mar 13
++美洲_穆斯林
++古兰经_开放_大学
+
+魁北克_解放阵线 [CANREB] # kkl 21 Mar 13
+
+高速公路_安全_委员会 [MEAREB] # kkl 21 Mar 13
++国防_道路_委员会
+
+安萨尔·伊斯兰组织 [IRQREB] # kkl 21 Mar 13
++伊斯兰教_支持者
+
+无政府主义者 [ESPREB] # kkl 21 Mar 13
+
+保存_克什米尔_运动 [SEAREB] # kkl 21 Mar 13
+
+革命_社会主义者 [SWEREB] # kkl 21 Mar 13
+
++安哥拉_独立_全国_联盟
+
+上帝_抵抗军 [CFRREB] # kkl 21 Mar 13
++约瑟夫科尼
+
+乌干达_国家_军队_解放_组织 [CFRREB] # kkl 21 Mar 13
+
+苏丹_人民_解放军 [SDNREB] # kkl 21 Mar 13
++苏丹_人民_解放运动
+
+科索沃_解放军 [EEUREB] # kkl 21 Mar 13
+柬埔寨_自由_战士 [INTREB] # kkl 21 Mar 13
+
+哥伦比亚_人民_解放军_部队 [COLREB] # kkl 21 Mar 13
+
+霍斯特_路德_维希_支持者 [DNKREB] # kkl 21 Mar 13
++图_帕克_革命前
++印尼_穆斯林_圣战_战士
+
+无政府主义者_攻击_团队 [GRCREB] # kkl 21 Mar 13
+巴德尔_力量 [PSEREB] # kkl 21 Mar 13
+
+突击队_无政府主义_集团 [GRCREB] # kkl 21 Mar 13
+
+克伦_民主_佛教军 [SEAREB] # kkl 21 Mar 13
++民主克伦_佛教_协会
++佛教_组织
++进步_佛教_凯伦_公民_组织
+
+达吉斯坦_解放军 [RUSREB] # kkl 21 Mar 13
+
+东_突厥_斯坦_解放_组织 [ASAREB] # kkl 21 Mar 13
+
+厄瓜多尔_反抗_力量 [ECUREB] # kkl 21 Mar 13
+
+组织_革命_重建 [DEUREB] # kkl 21 Mar 13
+
+伊斯兰_防卫_力量 [INDREB] # kkl 21 Mar 13
++穆斯林_防御力
++伊斯兰_圣战_伊斯兰_联盟
++圣战_组织
++纽约_圣战
++圣战
++先锋_征服
++伊斯兰组织
+
+组织_委员会 [INDREB] # kkl 21 Mar 13
++全_印度_圣战_组织_委员会
+
+卡因_国家_联盟_联盟 [SEAREB] # kkl 21 Mar 13
++克伦_民族_联盟
++革命_工人_协会
++革命_工人_委员会
+泰米尔伊拉姆_猛虎_解放_组织_猛虎_组织 [LKAREB] # kkl 21 Mar 13
++泰米尔_猛虎_组织
++纳萨尔派
+
+摩洛_伊斯兰_解放阵线_摩伊 [PHLREB] # kkl 21 Mar 13
++伊朗_人民_圣战者_组织
+
+人民_革命_武装 [ECUREB] # kkl 21 Mar 13
+马其顿_黎明 [MKDREB] # kkl 21 Mar 13
+马其顿_革命_组织 [EEUREB] # kkl 21 Mar 13
+穆斯林_美国_军队 [PAKREB] # kkl 21 Mar 13
+全球_穆斯林_压迫 [ZAFREB] # kkl 21 Mar 13
++博多_安全部队
+特里普拉邦_民族_解放阵线 [SASREB] # kkl 21 Mar 13
+
+奥罗莫人_解放阵线 [EAFREB] # kkl 21 Mar 13
+
+奥加登_民族_解放阵线 [EAFREB] # kkl 21 Mar 13
+
+南_马鲁古群岛_共和国 [INTREB] # kkl 21 Mar 13
+红色_游击队 [RUSREB] # kkl 21 Mar 13
+革命_军队 [JPNREB] # kkl 21 Mar 13
+阿萨姆邦_联合_解放阵线 [INDREB] # kkl 21 Mar 13
++联合_解放阵线
+
+乌玛_解放军 [SDNREB] # kkl 21 Mar 13
+
+革命_联合_阵线 [VENREB] # kkl 21 Mar 13
+
+维吾尔族_圣战_组织 [KKLREB] # kkl 21 Mar 13
+党卫军 [LVAREB] # kkl 21 Mar 13
+白色_军团 [ECUREB] # kkl 21 Mar 13
+也门_伊斯兰_圣战_组织 [INTREB] # kkl 21 Mar 13
+黑人_解放军 [USAREB] # kkl 21 Mar 13
++美国_黑人_解放军
+独立_武装_革命运动 [NMRREB] # kkl 21 Mar 13
+特殊_目的_伊斯兰团 [CASREB] # kkl 21 Mar 13
+官方_爱尔兰_共和军 [WEUREB] # kkl 21 Mar 13
+伊斯兰_马格里布_基地_组织 [AFRREB] # kkl 21 Mar 13
++伊斯兰_马格里布_基地_组织_委员会
+阿克萨_烈士旅 [MEAREB] # kkl 21 Mar 13
++阿克萨旅
+基地_组织
+#+AL_QAEDA_IN_IRAQ
+
+土耳其_真主党 [TURREB] # kkl 21 Mar 13
+穆克塔达·萨德尔旅 [MEAREB] # kkl 21 Mar 13
+缅甸_学生_民主_阵线 [SEAREB] # kkl 21 Mar 13
+安萨尔·松纳军_陆军 [IRQREB] # kkl 21 Mar 13
+
+反_阿拉伯_解放阵线 [DEUREB] # kkl 21 Mar 13
+
+反_帝国主义_组织 [DEUREB] # kkl 21 Mar 13
+
+反_国家_国防 [GRCREB] # kkl 21 Mar 13
+
+恐_解放_组织 [WEUREB] # kkl 21 Mar 13
+
+阿拉伯_突击队_组织 [INTREB] # kkl 21 Mar 13
+
+阿拉伯_共产主义_组织 [MEAREB] # kkl 21 Mar 13
+
+#part3
+阿拉伯_革命_共产主义_党 [JORREB] # kkl 21 Mar 13
+
+阿拉伯_复仇_组织 [LBNREB] # kkl 21 Mar 13
+
+阿拉伯_国家_统一_民族主义_组织 [CYPREB] # kkl 21 Mar 13
+
+阿拉伯_半岛_自由民 [KKLREB] # kkl 21 Mar 13
++阿拉伯_半岛_自由_组织
++阿拉伯_半岛_伊斯兰_革命_组织
+
+阿根廷_反_共产主义_联盟 [ARGREB] # kkl 21 Mar 13
+
+解放_武装_突击队 [PRIREB] # kkl 21 Mar 13
+
+武装_共产主义_联盟 [MEXREB] # kkl 21 Mar 13
+
+亚美尼亚_红军 [INTREB] # kkl 21 Mar 13
+
+亚美尼亚_抵抗_组织 [KKLREB] # kkl 21 Mar 13
+
+
+俾路支_解放军 [PAKREB] # kkl 21 Mar 13
+
+黑色_星期五 [TURREB] # kkl 21 Mar 13
+
+黑色_革命_突击队 [USAREB] # kkl 21 Mar 13
+黑_寡妇 [RUSREB] # kkl 21 Mar 13
+玻利瓦尔_运动 [VENREB] # kkl 21 Mar 13
+加拿大_匈牙利_自由_战士_联盟 [CANREB] # kkl 21 Mar 13
+加那利群岛_独立_运动 [INTREB] # kkl 21 Mar 13
++金丝雀_群岛_独立_自治_运动
+乍得_人民_革命运动 [CFRREB] # kkl 21 Mar 13
+西蒙博利瓦尔_命令主义 [MEXREB] # kkl 21 Mar 13
+反革命_分子 [GTMREB] # kkl 21 Mar 13
+克罗地亚_自由_战士 [USAREB] # kkl 21 Mar 13
+美国军队_武器_人民 [VENREB] # kkl 21 Mar 13
+埃及_革命 [EGYREB] # kkl 21 Mar 13
++埃及_纳赛尔_支持者_革命
+厄立特里亚_人民_解放阵线 [EAFREB] # kkl 21 Mar 13
+埃塞俄比亚_人民_革命_军队 [EAFREB] # kkl 21 Mar 13
+伊娃・贝隆_组织 [ARGREB] # kkl 21 Mar 13
+
+亚美尼亚_革命者_联合会_革命运动 [LBNREB] # kkl 21 Mar 13
+自由_希腊人 [GRCREB] # kkl 21 Mar 13
+自由_巴布亚_运动 [EINREB] # kkl 21 Mar 13
+南_摩鹿加群岛_青年_自由_运动 [NLDREB] # kkl 21 Mar 13
+伊斯兰教_捍卫者 [IDNREB] # kkl 21 Mar 13
++伊斯兰_防卫_阵线
+
+国际_革命_行动_小组 [FRAREB] # kkl 21 Mar 13
+
+马克思主义者 [GRCREB] # kkl 21 Mar 13
+无政府主义_联盟 [ITAREB] # kkl 21 Mar 13
+国际_共产主义_小组 [ITAREB] # kkl 21 Mar 13
+国际_革命_斗争 [GRCREB] # kkl 21 Mar 13
++国际_革命_斗争_团队
+
+伊拉克_民主_阵线 [IRQREB] # kkl 21 Mar 13
+伊斯兰_行动_组织 [MEAREB] # kkl 21 Mar 13
++伊斯兰教_任务_组织
+
+伊拉克_伊斯兰_行动_组织 [MEAREB] # kkl 21 Mar 13
+
+伊斯兰_兄弟_会 [GTMREB] # kkl 21 Mar 13
+
+伊斯兰_解放_组织 [MEAREB] # kkl 21 Mar 13
+
+伊斯兰_革命_运动 [MEAREB] # kkl 21 Mar 13
+
+乌兹别克_斯坦_伊斯兰_运动 [KKLREB] # kkl 21 Mar 13
++突厥_斯坦_伊斯兰党
+
+伊斯兰_复兴_运动 [JORREB] # kkl 21 Mar 13
+
+伊斯兰_社会_运动 [LBNREB] # kkl 21 Mar 13
+
+查谟_克什米尔_伊斯兰阵线 [SASREB] # kkl 21 Mar 13
+
+约旦_自由_军官_运动 [JORREB] # kkl 21 Mar 13
+
+约旦_伊斯兰_抵抗运动 [JORREB] # kkl 21 Mar 13
+
+约旦_民族_解放运动 [MEAREB] # kkl 21 Mar 13
+
+红色_高棉 [KHMREB] # kkl 21 Mar 13
++高棉_共产党
++柬埔寨_民主党
+
+
+库尔德_爱国联盟 [TURREB] # kkl 21 Mar 13
+劳塔罗_青年_运动 [CHLREB] # kkl 21 Mar 13
++劳塔罗派系
++劳塔罗
+
+黎巴嫩_阿拉伯_青年 [LBNREB] # kkl 21 Mar 13
+
+黎巴嫩_解放阵线 [LBNREB] # kkl 21 Mar 13
+
+黎巴嫩_全国_抵抗_阵线 [LBNREB] # kkl 21 Mar 13
+
+黎巴嫩_社会主义_革命_组织 [KKLREB] # kkl 21 Mar 13
+
+马察达_国防_运动 [FRAREB] # kkl 21 Mar 13
+民族主义_运动_组织_武装 [LAMREB] # kkl 21 Mar 13
+圣战者 [AFGREB] # kkl 21 Mar 13
+安哥拉_人民_解放_阵线 [CFRREB] # kkl 21 Mar 13
++民主党_安哥拉
++安哥拉_民族_解放阵线
+
+库尔德_人民_解放_阵线 [EURREB] # kkl 21 Mar 13
++民主人民_联盟
++库尔德_民族_解放阵线
+
+民族_解放_联盟 [SURREB] # kkl 21 Mar 13
+
+利比里亚_全国_爱国_阵线 [AFRREB] # kkl 21 Mar 13
+
+虚无主义者_阵营 [GRCREB] # kkl 21 Mar 13
+
+神圣_游击战争 [LBNREB] # kkl 21 Mar 13
++伊斯兰_圣战_组织_游击队
+
+爱国_抵抗军 [HNDREB] # kkl 21 Mar 13
+
+库尔德斯坦_爱国联盟 [IRQREB] # kkl 21 Mar 13
+
+佩德_罗莱昂_运动 [COLREB] # kkl 21 Mar 13
+
+菲律宾_人民_革命_阵线 [PHLREB] # kkl 21 Mar 13
+
+人民_革命_组织 [ARGREB] # kkl 21 Mar 13
+
+人民_革命党 [CFRREB] # kkl 21 Mar 13
++扎伊尔_人民_革命党
+
+庇隆主义 [ARGREB] # kkl 21 Mar 13
+
+波利萨里奥_阵线 [NAFREB] # kkl 21 Mar 13
+
+波兰_革命_军队 [EURREB] # kkl 21 Mar 13
++波兰_民族_解放阵线
+人民_抵抗_委员会 [MEAREB] # kkl 21 Mar 13
+
+无产阶级_行动_小组 [CHLREB] # kkl 21 Mar 13
+
+波多黎各_抵抗运动 [NMRREB] # kkl 21 Mar 13
+
+新_非洲共和国 [USAREB] # kkl 21 Mar 13
+
+革命性_自治_组织 [PRTREB] # kkl 21 Mar 13
+
++伊拉姆_学生_革命_组织
+
+无产阶级_革命_阵线_行动 [BELREB] # kkl 21 Mar 13
+
+革命_联合_阵线_运动 [HNDREB] # kkl 21 Mar 13
+印度_伊斯兰_学生_运动 [INDREB] # kkl 21 Mar 13
+秘密_军队_组织 [USAREB] # kkl 21 Mar 13
+秘密_组织 [USAREB] # kkl 21 Mar 13
+萨因 [IRNREB] # kkl 21 Mar 13
+南_摩鹿加群岛_自杀_突击队 [NLDREB] # kkl 21 Mar 13
+加州_南部_爱尔兰_共和军 [USAREB] # kkl 21 Mar 13
+
+苏丹_南部_独立_运动 [SDNREB] # kkl 21 Mar 13
++苏丹_南部_独立军
++苏丹_南部_独立_运动_军队
+
+西班牙_国家_行动 [WEUREB] # kkl 21 Mar 13
+
+叙利亚_穆斯林_游击队员 [BELREB] # kkl 21 Mar 13
+
+叙利亚_社会_民族党 [MEAREB] # kkl 21 Mar 13
+
+塔利班 [AFGREB] # kkl 21 Mar 13
+
+土耳其_伊斯兰_圣战_组织 [TURREB] # kkl 21 Mar 13
+
+土耳其_人民_解放军 [TURREB] # kkl 21 Mar 13
+
+土耳其人_民_解放阵线 [TURREB] # kkl 21 Mar 13
++土耳其人_民_解放党
+
+乌干达_民主_基督教_军 [EAFREB] # kkl 21 Mar 13
+
+乌克兰_反动_力量 [INDREB] # kkl 21 Mar 13
+
+阿拉伯_联合_革命 [KWTREB] # kkl 21 Mar 13
+
+纳赛尔_支持者_联合_组织 [INTREB] # kkl 21 Mar 13
++统一_纳赛尔_支持者_组织
+
+
+美国_流行_行动_运动 [CHLREB] # kkl 21 Mar 13
+
+工人_革命党 [BOLREB] # kkl 21 Mar 13
+全球_伊斯兰_圣战_组织 [YEMREB] # kkl 21 Mar 13
+
+台独 [INTREB] # kkl 21 Mar 13
+青年_行动_小组 [FRAREB] # kkl 21 Mar 13
+津巴布韦_非洲_民族_联盟 [SAFREB] # kkl 21 Mar 13
+
+犹太_复国主义_行动_小组 [PRTREB] # kkl 21 Mar 13
+法鲁克旅 [IRQREB] # kkl 21 Mar 13
+
+德菲斯 [INTREB] # kkl 21 Mar 13
+
+白色_极北之地 [USAREB] # kkl 21 Mar 13
+
+圣华金_民兵 [USAREB] # kkl 21 Mar 13
++圣华_金县_民兵
+
+东南亚_国家_联盟 [USAREB] # kkl 21 Mar 13
+
+摩洛哥_伊斯兰_战士_组织 [INTREB] # kkl 21 Mar 13
+
+解放_卢旺达_军队 [KKLREB] # kkl 21 Mar 13
++解放_卢旺达_民主_阵线
+
+#part4
+
+突尼斯_战斗组 [AFGREB] # kkl 21 Mar 13
++突尼斯_战斗_集团
++突尼斯_战斗群
++突尼斯_伊斯兰_战斗_组织
+
+东_突_伊斯兰_运动 [CHNREB] # kkl 21 Mar 13
++东_突_伊斯兰党
+
+伊斯兰_国际_维和部队 [CASREB] # kkl 21 Mar 13
++国际_伊斯兰营
++国际_伊斯兰
+
+波罗的海_国家_解放 [FRAREB] # kkl 21 Mar 13
+
+反_帝国主义_无产阶级 [ITAREB] # kkl 21 Mar 13
+
+阿拉伯_民族主义 [LBYREB] # kkl 21 Mar 13
++阿拉伯_国家_青年_组织
++阿拉伯_民族主义_组织
+
+智利_革命_委员会 [CHLREB] # kkl 21 Mar 13
+
+科西嘉_革命 [FRAREB] # kkl 21 Mar 13
+
+_法国_索马里_海岸 [EAFREB] # kkl 21 Mar 13
++索马里_海岸_解放
++解放阵线_索马里_海岸
++索马里_海岸_解放阵线
++伊斯兰党
+
+伊拉克_伊斯兰军 [IRQREB] # kkl 21 Mar 13
+
+巴勒斯坦_伊斯兰_解放阵线 [LBNREB] # kkl 21 Mar 13
+
+约旦_革命_军事委员会 [JORREB] # kkl 21 Mar 13
++约旦_军队_革命_委员会
+
+卡尔巴拉 [IRQREB] # kkl 21 Mar 13
+
+库尔德_自由_鹰派 [MEAREB] # kkl 21 Mar 13
++库尔德人_复仇旅
++库尔德_自由_鹰
++库尔德_自由_鹰_组织
+
+无产阶级_战士_团体 [ITAREB] # kkl 21 Mar 13
+
+阿拉伯_革命_行动_组织 [LBNREB] # kkl 21 Mar 13
+
+阿拉伯_革命_扩张_运动 [LBNREB] # kkl 21 Mar 13
++阿拉伯_世界_革命_浪潮
+
+西蒙_玻利瓦尔_协调_委员会 [COLREB] # kkl 21 Mar 13
+
+西南_非洲_人民_组织 [SAFREB] # kkl 21 Mar 13
+
+利比亚_伊斯兰_战斗_组织 [LBYREB] # kkl 21 Mar 13
++伊斯兰_对抗_组织
++利比亚_战斗_组织
++利比亚_伊斯兰组织
+
+拉斯卡尔_圣战 [IDNREB] # kkl 21 Mar 13
++圣战_战士
++伊斯兰_圣战_运动
+
+科西嘉_人民_军队 [FRAREB] # kkl 21 Mar 13
++萨帕塔主义者_民族_解放_军队
+
+军队_逊尼派_伊斯兰教_追随者 [IRQREB] # kkl 21 Mar 13
+
+马赫迪军 [IRQREB] # kkl 21 Mar 13
+
+地下_老挝_政府_自由民主党 [LAOREB] # kkl 21 Mar 13
++老挝_地下党
+
+伊斯兰_运动_圣武士 [IRQREB] # kkl 21 Mar 13
+圣战军 [IRQREB] # kkl 21 Mar 13
+阿布·阿里穆斯塔法 [MEAREB] # kkl 21 Mar 13
++红鹰
+
+伊斯兰_圣战_组织 [IRQREB] # kkl 21 Mar 13
++加利利_解放者
+
+基地_组织_阿拉伯_半岛 [IMG] # kkl 21 Mar 13
++阿拉伯_半岛_基地_组织
++奥拉基
++安瓦尔奥拉基
+
+共产党_解放_派系 [GRCREB] # kkl 21 Mar 13
+
+伊拉克_复仇 [IRQREB] # kkl 21 Mar 13
++巴斯里_哈桑
++哈桑·巴斯里
+
+孟加拉国_圣战者 [BGDREB] # kkl 21 Mar 13
+
+库尔德斯坦 [LBNREB] # kkl 21 Mar 13
++黎凡特_军队
++叙利亚_士兵
+
+黎巴嫩_解放阵线 [LBNREB] # kkl 21 Mar 13
+
+法塔赫_起义 [MEAREB] # kkl 21 Mar 13
++法塔赫_阿布·穆萨
+
+阿拉伯_中东_委员会 [INTREB] # kkl 21 Mar 13
+
+红旗_委内瑞拉 [VENREB] # kkl 21 Mar 13
+博多_猛虎_解放_组织 [SASREB] # kkl 21 Mar 13
++博多_解放虎
++恐怖组织_阿萨姆邦
+
+塞浦路斯_民族主义_组织 [CYPREB] # kkl 21 Mar 13
+
+厄立特里亚_伊斯兰_圣战_运动 [EAFREB] # kkl 21 Mar 13
++厄立特里亚_伊斯兰_圣战_组织
++厄立特里亚_伊斯兰_改革_运动
++伊斯兰_拯救_运动
++圣战者_尼尼微
+
+费卢杰_圣战者 [IRQREB] # kkl 21 Mar 13
+
+布尔什维克党 [INTREB] # kkl 21 Mar 13
++俄罗斯_布尔什维克党
+
+阿里·本·阿布_塔利班_圣战_组织 [IRQREB] # kkl 21 Mar 13
+
+阿卜杜拉_阿赞 [MEAREB] # kkl 21 Mar 13
++地中海_东部_地区_埃及
++叙利亚_埃及_基地_组织
+
+库尔德民主党 [IRQREB] # kkl 21 Mar 13
++革命_人民_抵抗组织
+
+乌兹别克斯坦_伊斯兰_圣战_组织 [UZBREB] # kkl 21 Mar 13
++伊斯兰_圣战_联盟
+
+联合_民族_解放阵线 [ASAREB] # kkl 21 Mar 13
+
+美国_人民_民主_阵线 [BGDREB] # kkl 21 Mar 13
++阿拉伯_人民_民主_阵线
++阿瓦兹_民主_阵线
+
+伊朗_民族_解放军 [GRCREB] # kkl 21 Mar 13
+
+克罗地亚_突击队 [DEUREB] # kkl 21 Mar 13
+
+伊拉克_解放军 [MEAREB] # kkl 21 Mar 13
++伊斯兰_革命_组织
+
+伊拉克_行刑队_圣战者 [IRQREB] # kkl 21 Mar 13
++伊拉克_圣战者
+
+伊玛目_侯赛因 [IRQREB] # kkl 21 Mar 13
+
+切格瓦拉_反_帝国主义 [ARGREB] # kkl 21 Mar 13
+逊尼派_支持者 [IRQREB] # kkl 21 Mar 13
+反_国家_司法 [GRCREB] # kkl 21 Mar 13
+阿瓦士_阿拉伯_人民_解放_运动 [IRNREB] # kkl 21 Mar 13
++法塔赫_鹰派
+
+鹰派 [IRQREB] # kkl 21 Mar 13
+
+尼日尔_三角洲_解放运动 [NGAREB] # kkl 21 Mar 13
+伊斯兰教_旗帜 [IRQREB] # kkl 21 Mar 13
+圣战_瑞典 [SWEREB] # kkl 21 Mar 13
++瑞典_基地_组织
++瑞典_圣战_组织
+
+卡鲁纳派系 [LKAREB] # kkl 21 Mar 13
++卡鲁派系
++泰米尔_国民_阵线
+
+谢赫·艾哈迈德·雅辛 [KKLREB] # kkl 21 Mar 13
+无政府主义_集团 [GRCREB] # kkl 21 Mar 13
+
+回教_团结_组织 [SOMREB] # Wikipedia says dissolved 
+阿尔沙巴布 [SOMREB]
++哈拉卡特_青年_党
++艾哈迈德·奥马尔
+
+阿布阿卜杜拉 [IMGSASMUS]
+阿布_侯赛因 [IMGSASMUS]
+阿布·侯赛因 [IMGSASMUS]
+阿布·穆萨布 [IMGSEAMUSASF]
+阿布萨勒姆 [IMGMUS] # MleH 11 Aug 2009
+阿布萨耶夫_组织 [IMGSEAMUSASF]
+阿夫塔布·艾哈迈德· [IMGSASMUS]
+侯赛因 [IMGSASMUS]
+阿勒_哈萨维 [IMGMUSALQ]
+阿什法克米万尼 [IMGKASMUS]
+阿什法克万尼 [IMGKASMUS]
+奥姆真理_教 [BUDREB]
+巴希尔_艾哈迈德 [IMGMUSALQ]
+巴希尔马尔瓦 [IMGMUSALQ]
+白种人_圣战者_组织 [IMGMUSRUSCNY]
+指挥官_哈达 [IMGMUSRUSCNY]
+埃尔_基地_组织 [IMGMUSALQ]
+埃米尔·哈达 [IMGMUSRUSCNY]
+极端_阿布•萨耶夫_组织 [IMGSEAMUSASF] # ELH 29 Jul 2009
+哈菲兹赛_义德 [IMGSASMUS]
+汉巴里 [IMGSEAMUSJMA] # leader jma
+伊本·哈塔卜_清真寺 [IMGMUSRUSCNY]
+国际_青年_联合会 [IMGSIK]
+伊斯兰_国际_组织 [IMGMUSRUSCNY]
+伊斯兰_维和部队 [IMGMUSRUSCNY]
+贾马尔_艾尔法德尔 [IMGMUSALQ]
+查谟_克什米尔_自由_力量 [IMGKASMUS]
+查谟_克什米尔_自由_阵线 [IMGKASMUS] # KASHMIR is
+日本_红军 [IMGJPN]
+伊斯兰_祈祷团 [IMGSEAMUSJMA]
+克什米尔_解放阵线 [IMGKASMUS]
+哈立德_谢赫_穆罕默德 [IMGMUSALQ] # CTA 28 Jul 2009
+虔诚军 [IMGSASMUS]
+拉斯_虔诚军 [IMGSASMUS]
+拉斯卡尔 [IMGSASMUS]
+马来西亚_圣战者_组织 [IMGSEAMUS] # looking to unite Malaysia, Phillipines, Indonesia under Muslim state
+穆罕默德·阿特夫 [IMGMUSALQ]
+摩洛_伊斯兰_解放阵线 [IMGSEAMUSASF]
+穆罕纳德 [IMGMUSRUSCNY] # kind of iffy
+佩尔韦兹·谢赫 [IMGMUS] # MleH 10 Aug 2009
+菲律宾_摩洛_伊斯兰_解放阵线 [IMGSEAMUSASF] # ELH 22 Jul 2009
+萨比尔辛格 [IMGKASMUS]
+哈米德_酋长 [IMGKASMUS]
+#  head of jma's consultative council, alias of hambali
+阿莱 [BUDREB]
+
