@@ -203,7 +203,8 @@ def do_coding(event_dict):
         prev_code = []
 
         SkipStory = False
-        print('\n\nProcessing story {}'.format(key))
+        logger.info('Processing story {}'.format(key))
+        # print('\n\nProcessing story {}'.format(key))
         StoryDate = event_dict[key]['meta']['date']
         for sent in val['sents']:
             NSent += 1
@@ -219,19 +220,21 @@ def do_coding(event_dict):
                 SentenceDate = event_dict[key]['sents'][sent][
                     'date'] if 'date' in event_dict[key]['sents'][sent] else StoryDate
                 Date = PETRreader.dstr_to_ordate(SentenceDate)
-
-                print("\n", SentenceID)
+                logger.info('{}'.format(SentenceID))
+                # print("\n", SentenceID)
                 parsed = event_dict[key]['sents'][sent]['parsed']
                 treestr = parsed
                 disc = check_discards(SentenceText)
                 if disc[0] > 0:
                     if disc[0] == 1:
-                        print("Discard sentence:", disc[1])
+                        logger.info("Discard sentence:{}".format(disc[1]))
+                        # print("Discard sentence:", disc[1])
                         logger.info('\tSentence discard. {}'.format(disc[1]))
                         NDiscardSent += 1
                         continue
                     else:
-                        print("Discard story:", disc[1])
+                        logger.info("Discard sentence:{}".format(disc[1]))
+                        # print("Discard story:", disc[1])
                         logger.info('\tStory discard. {}'.format(disc[1]))
                         SkipStory = True
                         NDiscardStory += 1
@@ -239,7 +242,8 @@ def do_coding(event_dict):
 
                 t1 = time.time()
                 sentence = PETRtree.Sentence(treestr, SentenceText, Date)
-                print(sentence.txt)
+                logger.info(sentence.txt)
+                # print(sentence.txt)
                 # this is the entry point into the processing in PETRtree
                 coded_events, meta = sentence.get_events()
                 code_time = time.time() - t1
@@ -309,22 +313,25 @@ def do_coding(event_dict):
         if SkipStory:
             event_dict[key]['sents'] = None
 
-    print("\nSummary:")
-    print(
-        "Stories read:",
-        NStory,
-        "   Sentences coded:",
-        NSent,
-        "  Events generated:",
-        NEvents)
-    print(
-        "Discards:  Sentence",
-        NDiscardSent,
-        "  Story",
-        NDiscardStory,
-        "  Sentences without events:",
-        NEmpty)
-    print("Average Coding time = ", times / sents if sents else 0)
+    logger.info('Summary: Stories read:{0}, Sentences coded:{1}, Events generated:{2}'.format(NStory, NSent, NEvents))
+    logger.info('Discards:  Sentence:{0}, Story:{1}, Sentences without events:{2}'.format(NDiscardSent, NDiscardStory, NEmpty))
+    logger.info("Average Coding time = {}".format(times / sents if sents else 0))
+    # print("\nSummary:")
+    # print(
+    #     "Stories read:",
+    #     NStory,
+    #     "   Sentences coded:",
+    #     NSent,
+    #     "  Events generated:",
+    #     NEvents)
+    # print(
+    #     "Discards:  Sentence",
+    #     NDiscardSent,
+    #     "  Story",
+    #     NDiscardStory,
+    #     "  Sentences without events:",
+    #     NEmpty)
+    # print("Average Coding time = ", times / sents if sents else 0)
 # --    print('DC-exit:',event_dict)
     return event_dict
 
@@ -465,10 +472,11 @@ def main():
         # run(paths, out, True)  # <===
         # chinese try
         run(paths, out, False)  # <===
-
-    print("Coding time:", time.time() - start_time)
-
-    print("Finished")
+    logger.info("Coding time:{}".format(time.time() - start_time))
+    logger.info('Finished')
+    # print("Coding time:", time.time() - start_time)
+    #
+    # print("Finished")
 
 
 def read_dictionaries(validation=False):

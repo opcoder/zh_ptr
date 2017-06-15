@@ -1,7 +1,7 @@
-INFO 2017-06-15 01:44:42,473: Running
-INFO 2017-06-15 01:44:42,473: Using default config file.
-INFO 2017-06-15 01:44:42,474: Reading v2_CAMEO.2.0.txt
-INFO 2017-06-15 01:44:46,424: Reading v2_Phoenix.agents.txt
+INFO 2017-06-15 11:20:33,555: Running
+INFO 2017-06-15 11:20:33,556: Using default config file.
+INFO 2017-06-15 11:20:33,621: Reading v2_CAMEO.2.0.txt
+INFO 2017-06-15 11:20:38,681: Reading v2_Phoenix.agents.txt
 
-INFO 2017-06-15 01:44:46,431: Reading Phoenix.discards.txt
-INFO 2017-06-15 01:44:46,434: Reading v2_Phoenix.IssueCoding.txt
+INFO 2017-06-15 11:20:38,706: Reading Phoenix.discards.txt
+INFO 2017-06-15 11:20:38,723: Reading v2_Phoenix.IssueCoding.txt

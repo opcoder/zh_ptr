@@ -387,9 +387,12 @@ def init_logger(logger_filename):
     cwd = os.getcwd()
     logger_filepath = os.path.join(cwd, logger_filename)
 
-    fh = logging.FileHandler(logger_filepath, 'w')
-    formatter = logging.Formatter('%(levelname)s %(asctime)s: %(message)s')
-    fh.setFormatter(formatter)
+    # fh = logging.FileHandler(logger_filepath, 'w')
+    fh = logging.StreamHandler()
+    fmt = logging.Formatter("[%(asctime)s %(filename)s:%(lineno)s]: %(message)s", "%Y-%m-%d %H:%M:%S")
+    fh.setFormatter(fmt)
+    # formatter = logging.Formatter('%(levelname)s %(asctime)s: %(message)s')
+    # fh.setFormatter(formatter)
 
     logger.addHandler(fh)
     logger.info('Running')
@@ -832,6 +835,6 @@ def stanford_parse(events):
             content = sent['content']
             seg = ltp_api.segment(content)
             sent['parsed'] = sf_parser.parser.parse(' '.join(seg)).flatten().toString().replace('IP', 'S').replace(')', ' )')
-            print(' '.join(seg))
-    print('done')
+            # print(' '.join(seg))
+    # print('done')
     return events

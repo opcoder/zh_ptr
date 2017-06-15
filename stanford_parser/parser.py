@@ -71,7 +71,7 @@ stanford_parser_home = None
 
 def startJvm():
     import os
-    os.environ.setdefault("STANFORD_PARSER_HOME", r"E:\stanford-parser-full-2016-10-31")
+    os.environ.setdefault("STANFORD_PARSER_HOME", r"E:\nlpT\stanford-parser-full-2016-10-31")
     global stanford_parser_home
     stanford_parser_home = os.environ["STANFORD_PARSER_HOME"]
     stanford_parser_jar = os.path.join(stanford_parser_home, 'stanford-parser.jar')

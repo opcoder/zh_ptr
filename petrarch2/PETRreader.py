@@ -55,10 +55,14 @@ except ImportError:
 
 import PETRglobals
 import utilities
+import logging
+
+# logger = logging.getLogger('petr_log')
 
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
+
 
 # ================== STRINGS ================== #
 
@@ -101,9 +105,14 @@ def parse_Config(config_path):
         if parser.has_option('Options', optname):
             try:
                 result = parser.getboolean('Options', optname)
+                # logger.info(optname + ' = ' + result)
                 print(optname, "=", result)
                 return result
             except ValueError:
+                # logger.info(
+                #     "Error in config.ini: " +
+                #     optname +
+                #     " value must be `true' or `false'")
                 print(
                     "Error in config.ini: " +
                     optname +

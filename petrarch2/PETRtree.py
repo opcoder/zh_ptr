@@ -1649,6 +1649,7 @@ class Sentence:
             print('==',ch.label, ch.get_text())
         for ch in self.tree.children:
             print('--',ch.label, ch.get_text())"""
+        logger = logging.getLogger('petr_log')
         if PETRglobals.NullVerbs or PETRglobals.NullActors:
             utilities.nulllist = []
         events = map(
@@ -1676,7 +1677,8 @@ class Sentence:
                             event[1], basestring):
 
                         code = utilities.convert_code(event[2], 0)
-                        print('checking event', event, hex(event[2]))
+                        logger.info('checking event, {0}, {1}'.format(event, hex(event[2])))
+                        # print('checking event', event, hex(event[2]))
                         if event[0] and event[1] and code:
                             for source in event[0]:
                                 valid.append(

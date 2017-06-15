@@ -30,6 +30,7 @@ import PETRglobals  # global variables
 import utilities
 import codecs
 import json
+import logging
 
 
 def get_actor_text(meta_strg):
@@ -56,6 +57,7 @@ def write_events(event_dict, output_file):
     global NEvents
     global StoryIssues
 
+    logger = logging.getLogger('petr_log')
     event_output = []
     for key in event_dict:
         story_dict = event_dict[key]
@@ -88,7 +90,10 @@ def write_events(event_dict, output_file):
             else:
                 joined_issues = []
 
-            print('Event: {}\t{}\t{}\t{}\t{}\t{}'.format(story_date, source,
+            # print('Event: {}\t{}\t{}\t{}\t{}\t{}'.format(story_date, source,
+            #                                              target, code, ids,
+            #                                              StorySource))
+            logger.info('Event: {}\t{}\t{}\t{}\t{}\t{}'.format(story_date, source,
                                                          target, code, ids,
                                                          StorySource))
 #            event_str = '{}\t{}\t{}\t{}'.format(story_date,source,target,code)
