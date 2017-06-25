@@ -220,7 +220,7 @@ def do_coding(event_dict):
                 SentenceDate = event_dict[key]['sents'][sent][
                     'date'] if 'date' in event_dict[key]['sents'][sent] else StoryDate
                 Date = PETRreader.dstr_to_ordate(SentenceDate)
-                logger.info('{}'.format(SentenceID))
+                # logger.info('{}'.format(SentenceID))
                 # print("\n", SentenceID)
                 parsed = event_dict[key]['sents'][sent]['parsed']
                 treestr = parsed

@@ -836,5 +836,5 @@ def stanford_parse(events):
             seg = ltp_api.segment(content)
             sent['parsed'] = sf_parser.parser.parse(' '.join(seg)).flatten().toString().replace('IP', 'S').replace(')', ' )')
             # print(' '.join(seg))
-    # print('done')
+    print('stanford_parser done')
     return events
