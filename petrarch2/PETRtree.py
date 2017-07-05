@@ -1,4 +1,4 @@
-
+#encoding:utf8
 
 from __future__ import print_function
 from __future__ import unicode_literals
@@ -330,7 +330,7 @@ class NounPhrase(Phrase):
                 value = child.get_text()
                 text += value[0]
                 PPcodes += value[1]
-            if child.label[:2] in ["JJ", "NN", "DT"]:
+            if child.label[:2] in PETRglobals.NounLeafLabels:
                 text += " " + child.text
         return text, PPcodes
 
@@ -487,7 +487,6 @@ class NounPhrase(Phrase):
             elif child.label[:2] in PETRglobals.NounLeafLabels:
             # elif child.label[:2] in ["JJ", "DT", "NN", 'NR']:
                 text_children += child.get_text().split()
-
             elif child.label == "PP":
                 m = self.resolve_codes(child.get_meaning())
 # --                print('NPgm-PP:',m)  # --
@@ -828,25 +827,35 @@ class VerbPhrase(Phrase):
             first, second, third = [up, "", ""]
             if not (up or c):
                 return [event]
-            if not isinstance(event, tuple):
-                second = event
-                third = c
-                if passive:
-                    for item in first:
-                        e2 = ([second], item, passive)
-                        self.sentence.metadata[id(e2)] = [event, meta, 7]
-                        returns.append(e2)
-            elif event[1] == 'passive':
-                first = event[0]
-                third = utilities.combine_code(c, event[2])
-                if up:
-                    returns = []
-                    for source in up:
-                        e = (first, source, third)
-                        self.sentence.metadata[id(e)] = [event, up, 1]
-                        returns.append(e)
-                    return returns
-                second = 'passive'
+
+            # if not isinstance(event, tuple):
+            #     second = event
+            #     third = c
+            #     if passive:
+            #         for item in first:
+            #             e2 = ([second], item, passive)
+            #             self.sentence.metadata[id(e2)] = [event, meta, 7]
+            #             returns.append(e2)
+            # elif event[1] == 'passive':
+            #     first = event[0]
+            #     third = utilities.combine_code(c, event[2])
+            #     if up:
+            #         returns = []
+            #         for source in up:
+            #             e = (first, source, third)
+            #             self.sentence.metadata[id(e)] = [event, up, 1]
+            #             returns.append(e)
+            #         return returns
+            #     second = 'passive'
+
+            # handle passive event: insert up into events who's target is absent
+            if self.check_passive() and isinstance(event, tuple) and not event[1]:
+                passive_evnets = []
+                for source in up:
+                    e = (event[0], source, event[2])
+                    self.sentence.metadata[id(e)] = [event, up, 1]
+                    passive_evnets.append(e)
+                return passive_evnets
             elif not event[0] in ['', [], [""], ["~"], ["~~"]]:
                 second = event
                 third = c
@@ -859,31 +868,30 @@ class VerbPhrase(Phrase):
 
         events = []
         up = self.get_upper()
-        if self.check_passive() or (passive and not c):
-            # Check for source in preps
-            source_options = []
-            target_options = up
-            for child in self.children:
-                if isinstance(child, PrepPhrase):
-                    if child.get_prep() in ["BY", "FROM", "IN"]:
-                        source_options += child.get_meaning()
-                        meta.append((child.prep, child.get_meaning()))
-                    elif child.get_prep() in ["AT", "AGAINST", "INTO", "TOWARDS"]:
-                        target_options += child.get_meaning()
-                        meta.append((child.prep, child.get_meaning()))
-            if not target_options:
-                target_options = ["passive"]
-            if source_options or c:
-
-                for i in target_options:
-                    e = (
-                        source_options,
-                        i,
-                        c if self.check_passive() else passive)
-                    events.append(e)
-                    self.sentence.metadata[id(e)] = [None, e, meta, 3]
-                    self.meaning = events
-                    return events
+        # if self.check_passive() or (passive and not c):
+        #     # Check for source in preps
+        #     source_options = []
+        #     target_options = up
+        #     for child in self.children:
+        #         if isinstance(child, PrepPhrase):
+        #             if child.get_prep() in ["BY", "FROM", "IN"]:
+        #                 source_options += child.get_meaning()
+        #                 meta.append((child.prep, child.get_meaning()))
+        #             elif child.get_prep() in ["AT", "AGAINST", "INTO", "TOWARDS"]:
+        #                 target_options += child.get_meaning()
+        #                 meta.append((child.prep, child.get_meaning()))
+        #     if not target_options:
+        #         target_options = ["passive"]
+        #     if source_options or c:
+        #         for i in target_options:
+        #             e = (
+        #                 source_options,
+        #                 i,
+        #                 c if self.check_passive() else passive)
+        #             events.append(e)
+        #             self.sentence.metadata[id(e)] = [None, e, meta, 3]
+        #             self.meaning = events
+        #             return events
 
         up = "" if up in ['', [], [""], ["~"], ["~~"]] else up
         low, neg = self.get_lower()
@@ -908,6 +916,11 @@ class VerbPhrase(Phrase):
 
         for item in lower:
             sents += item
+
+        # if passive, put 'up' to lower events who's target is absent
+        # if up and self.check_passive():
+        #     for i, event in enumerate(sents):
+        #         sents[i] = (event[0], up, event[2])
 
         if sents and not events:  # Only if nothing else has been found do we look at lower NP's?
                                   # This decreases our coding frequency, but
@@ -965,6 +978,9 @@ class VerbPhrase(Phrase):
         """
 # --          print('cp-entry')
         self.check_passive = self.return_passive
+        self.passive = self.children[0].label in ['VLB'] or self.head_phrase.label in ['VLB'] \
+                       or self.head in [u'被', u'遭']
+        return self.passive
         if True:
             if self.children[0].label in ["VBD", "VBN"]:
                 level = self.parent
@@ -1568,16 +1584,16 @@ class Sentence:
         for element in segs[1:]:
             if element.startswith("("):
                 lab = element[1:]
-                if lab == "NP":
+                if lab in PETRglobals.NPLabels:
                     new = NounPhrase(lab, self.date, self)
-                elif lab == "VP":
+                elif lab in PETRglobals.VPLabels:
                     new = VerbPhrase(lab, self.date, self)
                     self.verbs.append(new)
-                elif lab == "PP":
+                elif lab in PETRglobals.PPLabels:
                     new = PrepPhrase(lab, self.date, self)
                 else:
                     new = Phrase(lab, self.date, self)
-                    if lab == "EX":
+                    if lab in PETRglobals.EXLabels:
                         existentials.append(new)
 
                 new.parent = level_stack[-1]

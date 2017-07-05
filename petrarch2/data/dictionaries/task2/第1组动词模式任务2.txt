@@ -1,0 +1,326 @@
+---  BACKLASH   [---]  ---
+反弹 [---]
+
+
+
+
+---  BELIEVE   [---]  ---
+相信
+信任
+确信
+- * {没有 意义}
+- * 危险                                         [012]         # BELIEVE
+- * 朋友                                            [050]         # BELIEVE
+- * 负有责任                                       [110]         # BELIEVE
+- * 劫持                                            [1124]        # BELIEVE
+
+
+
+
+---  BRACE   [---]  ---
+保持
+稳定
+平稳
+- * 攻击                                      [154]         # POISE
+
+
+
+
+---  BRING   [---]  ---
+带来
+引起
+导致
+传递
+传达
+投送
+发表
+邮递
+发出
+散播
+给予
+- * 击败                                            [---]         # DELIVER
+- * 演说                                           [010]         # DELIVER
+- * 信息                                           [010]         # DELIVER
+- * 信件                                            [010]         # DELIVER
+- * 报道                                            [010]         # DELIVER
+- * 请愿书                                          [020]         # DELIVER
+- * 上诉                                            [020]         # DELIVER
+- * 抗辩                                              [020]         # DELIVER
+- * 恳求                                              [023]         # DELIVER
+- * {&CEASEFIRE PROPOSAL}                             [026]         # DELIVER
+- * 信件                                            [040]         # DELIVER
+- * 认可                                       [051]         # DELIVER
+- * 礼物                                              [070]         # DELIVER
+- * 援助                                               [070]         # DELIVER
+- * &AIRCRAFT                                         [072]         # DELIVER
+- * &MILITARY                                         [072]         # DELIVER
+- * {人道主义 援助}                                [073]         # DELIVER
+- * &FOOD                                             [073]         # DELIVER
+- * &FOOD                                             [073]         # DELIVER
+- * 水                                             [073]         # DELIVER
+- * 救援物资                                               [073]         # DELIVER
+- * 对立观点                                  		[110]         # DELIVER
+- * {沉重 打击}                                     [110]         # DELIVER
+- * 拒绝                                            [110]         # DELIVER
+- * 驳回                                            [110]         # DELIVER
+- * 信息                                 			[111]         # DELIVER
+- * 重击                                 			[111]         # DELIVER
+- * 侮辱                                            [111]         # DELIVER
+- * 打击                                            [120]         # DELIVER
+- * 警告                                            [130]         # DELIVER
+- * 抗议                                            [140]         # DELIVER
+- * 逮捕令                              			[173]         # DELIVER
+- * 进攻                                            [190]         # DELIVER
+- * {火箭 袭击}                                   	[194]         # DELIVER
+
+
+
+
+---  BROADCAST   [---]  ---
+广播   # jw   11/13/91
+传播
+宣传
+电视广播
+- * &PROGRAM                                          [031]         # BROADCAST
+
+
+
+
+---  BURN   [---]  ---
+焚烧   # shan   8/6/93
+燃烧
+烧毁
+燃焦
+- * 照片                                          [141]         # BURN
+- * 画像                                          [141]         # BURN
+- * 肖像                                          [141]         # BURN
+- * 旗帜                                              [141]         # BURN
+- * 办公室 [1712]
+- * 教堂 [1712]
+- * 房屋                                            [1712]        # BURN
+- * 清真寺 [1712]
+- * &TOWN                                             [1712]        #
+- * 家                                              [1712]        # BURN
+
+
+
+
+---  CANCEL   [---]  ---
++CALL_OFF [160]
++SHUT_DOWN {+SHUTS_DOWN +SHUTTING_DOWN }
++TAKE_LEAVE {+TAKES_LEAVE +TAKING_LEAVE +TOOK_LEAVE +TAKEN_LEAVE }
+废除
+中止 [160]
+停止
+关闭
+止住
+废止
+结束
+停顿
+退出  # oy 29 Nov 2005
+重新关闭
+暂停
+终止
+- 交易 * [---]
+- * 研究                                            [---]         # HALT
+- * 市场 [---]
+- * 基地                                              [---]         # CLOSE
+- * 警告                                    [012]         # CLOSE
+- * 会议                                           [040]         # END
+- * 参观                                             [042:043]     # CONCLUDE
+- * 旅行                                              [042:043]     # CONCLUDE
+- * 操作                                         [080]         # HALT
+- * 驱逐出境                                            [080]         # STOP
+- * 罢工                                            [082]         # HALT
+- * 职务                                              [0831]        # QUIT
+- * 禁运                                           [085]         # STOP
+- * 暴行                                          [0871]        # HALT
+- * 攻击                                           [0871]        # HALT
+- * 冲突                                           [0871]        # HALT
+- * 交火                                           [0871]        # END
+- * 炮火                                           [0871]        # END
+- * &FIGHT                                            [0871]        # END , END
+- * 攻击                                            [0871]        # STOP
+- * 营地                                              [0874]        # QUIT
+- * 空袭                                       [087]         # HALT
+- * 封锁                                          [087]         # END
+- * 屠杀                                         [087]         # STOP
+- * &WEAPON                                           [087]         # STOP
+- * 罢工                                            [087]         # CALLED_OFF
+- * 炮击                                             [087]         # STOP
+- * 调查团                            [090]         # WRAPPED_UP
+- 业务 * (因 罢工)                              [143]         # CLOSE
+- * 工作                                              [143]         # STOP
+- * 越境                                 [160]         # CLOSE
+- * 资料                                          [160]         # HALT
+- * 航班                                           [160]         # HALT
+- * 办公室                                            [160]         # CLOSE
+- * 谈话                                             [160]         # CALLED_OFF
+- * 营地                                             [160]         # CLOSE
+- * 聚会                                             [160]         # QUIT
+- * 参观                                              [160]         # CALLED_OFF
+- * 基地                                              [160]         # CLOSE
+- 工作 *                                              [160]         # STOP
+- * {贸易 办公室}                                    [161]         # CLOSE
+- * 领事馆                                         [161]         # CLOSE
+- * 大使馆                                         [161]         # CLOSE
+- 大使馆 *                                           [161]         # CLOSE
+- * 补助                                            [1621]        # STOP
+- * {&MILITARY 行动}                           [1622]        # HALT
+- * {&MILITARY 合作}                           [1622]        # HALT
+- * {&SECURITY 行动}                           [1622]        # HALT
+- * {&SECURITY 合作}                           [1622]        # HALT
+- * {运送 武器}                                   [1622]        # STOP
+- * 援助                                               [162]         # HALT
+- 援助 *                                               [162]         # STOP
+- 突然 * 对话                                    [164:164]     # END
+- * 对话                                             [164:164]     # END
+- * 会议 (与 谈判方)                        [164]         # ABORT
+- * 生产线                                 [170]         # CLOSE
+- * 电视台                              [1721]        # CLOSE
+- * &INFORMATION                                 [1721]        # CLOSE
+- * 出版                                       [1721]        # HALT
+- * 广播                                        [1721]        # CLOSE
+- * 学校                                           [1721]        # CLOSE
+- * 无线电                                             [1721]        # CLOSE
+- 警察 * {竞选 办公室}                          [1722]        # CLOSE
+- * 路线                                             [1723]        # CLOSE
+- * 道路                                              [1723]        # CLOSE
+- * 商店                                              [1723]        # CLOSE
+- * 投票站                                [172]         # CLOSE
+- * 主链路                                       [172]         # CLOSE
+- * 大学                                        [172]         # CLOSE
+- * 领空                                          [172]         # CLOSE
+- * 高速公路                                           [172]         # CLOSE
+- * 剧场                                           [172]         # CLOSE
+- * 边境                                            [172]         # CLOSE
+- * 中心                                            [172]         # CLOSE
+- * {援助 车队}                                      [191]         # HALT
+- * 通路                                            [191]         # CLOSE
+- * 机场                                           [191]         # CLOSE
+- * 边境                                            [191]         # RECLOSE
+- * &CEASEFIRE                                        [196]         # CALLED_OFF
+
+
+
+
+---  CHANT   [---]  ---
+歌颂  # ADG 23 Jun 2003
+呼吁
+高呼
+- * 死亡                                             [111]         # CHANT
+- * (反对 政府)                              [141]         # CHANT
+- * (在 游行)                                [141]         # CHANT
+- * (在 首都)                                      [141]         # CHANT
+- * 口号                                           [141]         # CHANT
+
+
+
+
+---  CLAMP   [---]  ---
+固定  # shan   8/12/93
+定时
+收紧
+- * 宵禁                                            [1723]        # CLAMP
+
+
+
+
+---  CLAMP1   [---]  ---
+取缔
+- * (犯罪行为)                                              [173]         # CLAMP
+
+
+
+---  CLEANSE   [---]  ---
+清洗  # ab 18 Nov 2005 MJT 7 FEB WHICH DEFINITION FOR SYN
+- * &TOWN                                      [203]         # CLEANSE
+- * (从 地区)                                      [203]         # CLEANSE
+- 人种 *                                        [203]         # CLEANSE
+- 种族 *                                            [203]         # CLEANSE
+
+
+
+
+---  CLINCH   [---]  ---
+紧拥
+抓住
+确定
+敲定
+- * &TREATY                                           [050]         # CLINCH
+- * 交易                                              [061:061]     # CLINCH
+
+
+
+
+---  COLLAPSE   [---]  ---
+弯曲
+塌陷
+崩
+瓦解
+解体
+遣散 [160]
+崩溃
+溶解
+分裂
+折
+下塌
+- * &DISPUTE                                     [160]         # COLLAPSE
+- 谈判 *                                             [164:164]     # COLLAPSE
+
+
+
+
+---  COLLECT   [---]  ---
++ROUND_UP
+积累
+搜集
+收集
+汇编
+囤积
+- * 文件                                         [090]         # COLLECT
+
+
+
+
+---  COME_AFTER   [---]  ---
++COME_AFTER {+COMES_AFTER +COMING_AFTER +CAME_AFTER }
+
+
+
+
+---  CONFIRM   [---]  ---
++SEEM_CONFIDENT [013] # sls 16 Sep 2007
+断言 [051]
+信任
+确认
+重申
+证实
+验证
+申明
+强调
+- * 指控                                        [010]         # CONFIRM
+- * 辞退                                         [010]         # CONFIRM
+- * 解雇                                              [010]         # CONFIRM
+- * 关注点                                           [012]         # REAFFIRM
+- * {秘密 监狱}                                  [015]         # CONFIRM
+- * 决心                                     [030]         # REAFFIRM
+- * 采购 &WEAPON                             [0312]        # AFFIRM
+- * 选举                                          [0341]        # REAFFIRM
+- * 承诺                                        [050]         # AFFIRM
+- * 承诺                                        [050]         # CONFIRM , REAFFIRM
+- * 支持                                           [051]         # REAFFIRM
+- * 支持                                           [051]         # CONFIRM , REAFFIRM
+- * {选举 获胜者}                              [060]         # CONFIRM
+- * {&DEFENSE &WEAPON}                                [074]         # CONFIRM
+- * 条件                                        [100]         # REAFFIRM
+- * 主张                                             [100]         # REAFFIRM
+- * &OPPOSITION                                       [110]         # REAFFIRM
+- * 异议                                         [110]         # REAFFIRM
+- * 拒绝                                         [110]         # REAFFIRM
+- * {&FIGHT &CRIME CHARGES}                           [1125]        # CONFIRM
+- * 抵制 (对 会议)                              [125]         # CONFIRM
+- * 承诺 (反对 威胁)                      [130]         # REAFFIRM
+- * 抵制                                           [163]         # CONFIRM
+- 法院 * 判决                                    [173]         # CONFIRM
+- * 逮捕                                            [173]         # CONFIRM

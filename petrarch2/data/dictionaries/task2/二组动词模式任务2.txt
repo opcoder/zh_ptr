@@ -1,0 +1,316 @@
+---  CONSPIRE   [---]  ---
+阴谋
+策划
+图谋
+密谋
+谋划
+设计
+共谋
+协力
+
+---  CONSTRUCT   [---]  ---
+建立
+建造
+形成
+构思
+构想
+设想
+编造
+构成
+修建
+创立
+创造
+设计
+策划
+发明
+制作
+制造
+塑造
+锻造
+发起
+造成
+导致
+建设
+开创
+打造
+创设
+做出
+树立
+- * 委员会                                         [030]         # SET_UP
+- * 协会                                             [030]         # SET_UP
+- * {自由 贸易}                                      [0311]        # CONSTRUCT
+- * {&DEFENSE 合作}                            [0312]        # FORM
+- * 保护性贸易                                       [0312]        # FORM
+- * 联系                                          [032]         # FORGE
+- * 会议                                           [036]         # SET_UP
+- * 同盟                                          [050]         # FORGE
+- * 关系                                              [050]         # FORGE , SET_UP
+- * 关系                                              [060]         # FORGE
+- * {经济 群体}                                  [061:061]     # FORM
+- * {投资 公司}                              [061]         # FORM
+- * 经济团体                                         [061:061]     # FORM
+- * {联合 公司}                                 [061]         # SET_UP
+- * 基金                                           [070]         # SET_UP
+- * 基金会                                           [070]         # SET_UP
+- * 庇护                                          [073]         # ERECT
+- * 避难所                                          [073]         # ERECT
+- * &INVESTIGATION                                    [090]         # SET_UP
+- * 特别法庭                                          [090]         # SET_UP
+- * 审理委员会                                          [090]         # SET_UP
+- * 裁决                                             [090]         # SET_UP
+- * 判决                                             [090]         # SET_UP
+-(针对 &FIGHT)* &INVESTIGATION                      [094]         # SET_UP
+- * 运动                                          [1043]        # CREATE
+- &MILITARY * 担忧                                 [110]         # BUILD
+- * 人墙                                    [144]         # FORM
+-  (在 边境) * 围墙                                  [150]         # BUILD
+- * 准军事部队                                      [150]         # SET_UP
+- * 预备部队                                         [150]         # SET_UP
+- * &MILITARY                                         [150]         # SET_UP
+- * 屏障                                           [150]         # BUILD
+- * 基地                                              [150]         # SET_UP
+- * 防御工事                                    [154]         # BUILD
+- * 军事力量                                         [154]         # BUILD
+- 军队 *                                             [154]         # BUILD
+- (沿 边境) * 围墙                                   [160]         # ERECT
+- * 屏障                                           [160]         # ERECT
+- * {&SECURITY 区域}                                  [191]         # SET_UP
+- * 骚乱                                       [:110]        # CREATE
+- * 安全区                                           [191]         # SET_UP
+- * 动乱                                             [:110]        # CREATE
+- * 障碍                                             [150]         # BUILD
+- * 基础                                             [150]         # SET_UP
+
+---  CONTINUE   [---]  ---
+前进
+进步
+继续
+坚持
+前行
+行进
+进行
+进化
+发展
+增进
+加强
+进入
+
+- * 计划                                              [020]         # ADVANCE
+- * &MEDIATION                                        [045]         # CONTINUE
+- * 对话                                             [046:046]     # CONTINUE
+- * 会谈                                             [046:046]     # CONTINUE
+- * 谈话                                             [046:046]     # CONTINUE
+- * 讨论                                           [046]         # CONTINUE
+- * 努力                                            [060]         # CONTINUE
+- * 供给                                            [070]         # CONTINUE , CONTINUE
+- * 支援                                             [070]         # CONTINUE , CONTINUE
+- 僵局 *                                          [120:120]     # CONTINUE
+- * 围攻                                             [1246]        # CONTINUE
+- * 起义                                          [145]         # CONTINUE
+- * {&MILITARY 集结}                               [154]         # CONTINUE
+- * 禁运                                           [163]         # CONTINUE
+- * 制裁                                         [170]         # CONTINUE
+- * 镇压                                             [170]         # CONTINUE
+- * {&MILITARY 行动}                             [190]         # CONTINUE
+- * {&MILITARY 措施}                                [190]         # CONTINUE
+- * 军事打击                                         [190]         # CONTINUE
+- * 军事行动                                         [190]         # CONTINUE
+- * 轰炸                                       [190]         # CONTINUE
+- &MILITARY *                                         [190]         # ADVANCE
+- * 进攻                                         [190]         # CONTINUE
+- * 攻击                                            [190]         # ADVANCE
+- * 冒犯                                             [190]         # CONTINUE
+- * 攻势                                           [190]         # CONTINUE
+- * 打击                                           [190]         # CONTINUE
+
+---  CRASH   [---]  ---
+冲突
+碰撞
+撞击
+破坏
+失事
+冲击
+轰击
+爆炸
+袭击
+坠入
+坠毁
+坠落
+毁坏
+沉没
+- &AIRCRAFT *                                         [---]         # CRASH
+- * 遇难者                                            [---]         # CRASH
+- &CAR *                                              [---]         # CRASH
+- 船 *                                              [---]         # CRASH                                           [1712]        # WRECK
+- * 边界                                            [191]         # SLAM
+- * 手榴弹                                           [193]         # SLAM
+- &WEAPON *                                           [194]         # SLAM , SLAM
+- 迫击炮 *                                            [194]         # CRASH
+- 火箭 *                                            [194]         # SLAM
+- 炮弹 *                                            [194]         # CRASH
+- * &WEAPON                                           [195]         # SLAM
+
+
+---  CRASH1 [---] ---
+抨击
+指责
+批评
+- * 定罪                                             [111]         # SLAM
+- * 任命                                             [111]         # SLAM
+- * 入侵                                             [111]         # SLAM
+- * 宣判                                             [111]         # SLAM
+- * 政策                                             [111]         # SLAM
+- * &CRIME                                           [111]         # SLAM
+- * 罢工                                             [111]         # SLAM
+- * 行动                                             [111]         # SLAM
+- * 计划                                             [111]         # SLAM
+
+---  CRAWL   [---]  ---
+爬行
+滑行
+匍匐
+滑过
+滑入
+陷入
+
+
+---  CROSS   [---]  ---
+交叉
+交错
+横渡
+越境
+跨越边境
+入境
+出境
+跨越
+涌入
+进入
+- 铁路 *                                          [---]         # CROSS
+- &REFUGEE *                                    [0233]        # CROSS
+- &MILITARY *                                   [190]         # CROSS
+- 限制 *                                       [191]         # CROSS
+- 势力 *                                             [192]         # CROSS
+- 遏制 *                                              [191]         # CROSS
+- 强制 *                                              [192]         # CROSS
+- * 边境线                                            [:074]        # CROSS
+
+---  DECORATE   [---]  ---
+修饰
+装饰
+润色
+
+---  DEFUSE   [---]  ---
+平息
+销毁
+拆除
+减缓
+去掉
+除掉
+- 警方 * &WEAPON                                    [---]         # DEFUSE
+- * &WEAPON                                           [---]         # DEFUSE
+
+---  DESPATCH   [---]  ---
+出版
+派遣
+派出
+出口
+- * 国家                                         [---]         # EXPORT
+- * {客车}                           [061]         # EXPORT
+- * 汽车                                          [061]         # EXPORT
+- * &WEAPON                                           [072]         # EXPORT
+- * 维和部队                               [074]         # DESPATCH
+- * {&MILITARY 人员}                             [154]         # DESPATCH
+- 批准 *                                          [163]         # EXPORT
+- * 队伍                                              [074]         # DESPATCH
+- * 军事人员                                            [154]         # DESPATCH
+
+--- DISMISS [---] ---
+解雇
+摒弃
+拒绝
+否定
+解散
+收回
+取消
+停止
+- * 投机                                       [010]         # DISMISS
+- * 指控                                        [016]         # DISMISS
+- * 控告                                              [016]         # DISMISS
+- * 指责                                        [016]         # DISMISS
+- * 断言                                              [016]         # DISMISS
+- * 主张                                         [016]         # DISMISS
+- * 控告                                           [016]         # DISMISS
+- * 报道                                            [016]         # DISMISS
+- * 要求                                             [016]         # DISMISS
+- * 职务                                       [110]         # DISMISS
+- * 州长                                          [110]         # DISMISS
+- * 地方长官                                          [110]         # DISMISS
+- * 抗议                                           [110]         # DISMISS
+- * 信息                                           [110]         # DISMISS
+- * &PROPOSAL                                         [120]         # DISMISS
+- * {法官 命令}                                     [1213]        # DISMISS
+- * 法官判决                                          [1213]        # DISMISS
+
+---  DETER   [---]  ---
+阻止
+制止
+打消
+转移
+转向
+- * 攻击                                           [---]         # DETER
+
+---  DEVELOP   [---]  ---
+发展
+繁荣
+促进
+成长
+崛起
+扩散
+扩大
+膨胀
+增强
+- 危机 *                                            [012]         # DEVELOP
+- * {友好 关系}                              [050]         # DEVELOP
+
+---  DISCOVER   [---]  ---
+发现
+发觉
+侦查
+查明
+找到
+定位
+查找
+揭开
+- * &SOLUTION                                         [030]         # FIND
+- * {无 &EVIDENCE}                                    [080]         # FOUND
+- * {没有 &EVIDENCE}                                    [080]         # FOUND
+- * 无辜                                          [080]         # FIND
+- * 清白                                              [080]         # FIND
+- * &EVIDENCE                                         [090]         # FOUND
+- * 密谋                                              [090]         # UNCOVER
+- * 阴谋                                              [090]         # UNCOVER
+- * (违反) (法律)                              [110]         # FOUND
+- * {犯罪 行为}                                          [128]         # FOUND
+- * 罪恶                                            [173]         # FOUND
+- * 有罪                                              [173]         # FOUND
+- * 死亡                                              [190]         # FIND
+- * 死者                                              [190]         # FIND
+
+---  DISPEL   [---]  ---
+驱逐
+驱散
+消除
+
+---  DISTANCE   [---]  ---
+疏远
+远离
+超过
+超越
+- * 提议                                              [120]         # DISTANCE
+- * 责备                                              [120]         # DISTANCE
+
+---  DOCK   [---]  ---
+停靠
+停入
+停泊
+- *                                                   [042:043]     # DOCK

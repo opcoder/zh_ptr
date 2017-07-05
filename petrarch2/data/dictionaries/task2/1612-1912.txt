@@ -1,0 +1,336 @@
+---  DRAFT   [---]  ---
+起草
+绘画
+描绘
+- * 图片                                              [---]         # DRAW
+- * 画                                                [---]         # DRAW
+- * 声明                                              [010]         # DRAW
+- * 宪法                                              [014]         # DRAFT
+- * 章程                                              [014]         # DRAFT
+- * 指导方针                                          [014]         # DRAFT
+- * &TREATY                                           [014]         # DRAFT
+- * 法案                                              [014]         # DRAFT
+- * 计划                                              [014]         # DRAFT
+- * 法案                                              [031]         # DRAFT
+- * 入侵 &PROPOSAL                                    [035]         # DRAFT
+- 在 &TOWN * &DISPUTE 草案                            [037]         # DRAFT
+- * 命令                                              [100]         # OUTLINE
+- * (警告 信)                                         [130]         # DRAFT
+
+
+
+---  DRAFT1   [---]  ---
+征募
+征兵
+- * {警力 增援}                                       [153]         # DRAFT
+- * 警力                                              [153]         # DRAFT
+- * {地面 火力}                                       [190]         # DRAW
+
+
+
+---  DRAG   [---]  ---
+拖  # OY 25 Jul 2003
+拉
+拖拉
+拖拽
+
+
+
+
+---  DRIVE   [---]  ---
+驱逐
+驱赶
+- 集体 *                                       [0874]        # DRIVE
+- * 出                                         [201]         # DRIVE
+
+
+
+
+---  ELIMINATE   [---]  ---
+消除
+排除
+- * 限制                                       [081]         # ELIMINATE
+
+
+
+
+---  EMBRACE   [---]  ---
+接受
+采纳
+通过
+支持
+- * 法律                                              [---]         # ADOPT
+- * {&MILITARY &TREATY}                               [030]         # ADOPT   
+- * 构想                                              [030]         # ACCEPT
+- * 规划                                              [030]         # ACCEPT
+- * &TREATY                                           [030]         # ACCEPT
+- * 请求                                              [030]         # ACCEPT
+- * 计划                                              [030]         # ACCEPT
+- * 请求                                              [031]         # ACCEPT
+- * &PROPOSAL                                         [032]         # ACCEPT
+- * &REFUGEE                                          [0333]        # ACCEPT
+- * 邀请                                              [036:036]     # ACCEPT  
+- * &MEDIATION                                        [038]         # ACCEPT
+- * {新 关系}                                         [050]         # EMBRACE
+- * (成为 合作者)                                     [050]         # EMBRACE
+- * &SOLUTION                                         [057]         # ADOPT 
+- * 司法权                                            [063]         # ACCEPT
+- * 审判权                                            [063]         # ACCEPT
+- * 管辖权                                            [063]         # ACCEPT
+- * 权力                                              [063]         # ACCEPT
+- * 拒绝                                              [080]         # ACCEPT
+- * {宪法 修正案}                                     [0834]        # ADOPT
+- * 法案                                              [0834]        # ADOPT
+- * {竞选 截止期限}                                   [083]         # ACCEPT
+- * 竞选                                              [083]         # ACCEPT
+- * 宣布 (主权)                                       [1044]        # ADOPT
+- * {侵略 战略}                                       [130]         # ADOPT
+- * {早期 竞选 打击}                                  [160]         # ADOPT
+
+
+
+---  EMBRACE1   [---]  ---
+承认
+承担
+提供
+- * 责任                                              [015]         # ACCEPT  
+- * 费用                                              [015]         # ACCEPT  
+- * 交付                                              [070]         # ACCEPT 
+- * 贷款                                              [071]         # ACCEPT
+
+
+
+---  EMERGE   [---]  ---
+查明 
+- (会议上) *                                          [040:040]     # EMERGE 
+- * (作为 &NEGOTIATOR)                                [045]         # EMERGE
+ 
+
+
+ 
+---  EMPTY   [---]  ---
+耗尽
+消耗
+倾卸
+排出
+
+
+
+
+---  ENDURE   [---]  ---
+忍耐
+容忍  
+保持
+幸存
+- * 沉默                                            [011]         # REMAIN
+- * 悲观                                            [012:012]     # REMAIN
+- * 关心                                            [012]         # REMAIN
+- * 怀疑                                            [012]         # REMAIN
+- * 乐观                                            [013]         # REMAIN
+- * 确信                                            [013]         # REMAIN
+- * 中立                                            [030]         # REMAIN
+- * 紧密关系                                        [050:050]     # REMAIN
+- * 紧密                                            [050]         # REMAIN 
+- * 承诺                                            [051]         # REMAIN
+- * (争执)                                          [110:110]     # REMAIN
+- * (不和)                                          [110:110]     # REMAIN
+- * 怀疑                                            [110]         # REMAIN
+- * 对立                                            [110]         # REMAIN
+- * 僵局                                            [120]         # REMAIN
+- * 挑衅                                            [120]         # REMAIN
+- * 分离                                            [124]         # REMAIN
+- * 孤立                                            [127]         # REMAIN
+- &MILITARY *                                       [150]         # REMAIN
+- * {&DETENTION}                                    [:1243]       # REMAIN
+- * 限制                                            [:170]        # REMAIN
+
+
+
+
+---  ENJOY   [---]  ---
+欣赏  # ELH 03 Jun 2008
+品味
+享受
+- * {文化 纽带}                                   [030:030]     # ENJOY   
+- * 支持                                          [:050]        
+
+
+
+
+---  ENTER   [---]  ---
+进入
+- * {非 军事区}                                   [128]         # ENTER
+- * &MILITARY 总部                             [192]         # ENTER
+- * &MILITARY 司令部                             [192]         # ENTER
+- * &MILITARY 指挥部                             [192]         # ENTER
+- * {&军事 暴力}                                 [192]         # ENTER
+- * {&军事 武力}                                 [192]         # ENTER
+- * 军事 重镇                                    [192]         # ENTER
+- 坦克 *                                         [192]         # ENTER
+
+
+
+---  ENTER1   [---]  ---
+参加
+- * &NEGOTIATION                                 [036]         # ENTER
+- * 会谈                                         [046:046]     # ENTER
+- * &TREATY                                        [057:057]     # ENTER
+
+
+
+
+---  ERUPT   [---]  ---
+爆发  # shan   9/6/93
+- * 敌意                                         [110:110]     # ERUP
+- * 憎恨                                         [110:110]     # ERUP
+- * 叛乱                                         [140]         # ERUPT
+- * 暴力                                         [180]         # ERUPT
+- * &FIGHT                                        [190:190]     # ERUPT
+- * 炮火                                         [193]         # ERUPT
+- * &武器                                        [194]         # ERUPT
+
+
+
+
+---  EVACUATE   [---]  ---
+放弃
+叛变 [120]
+撤离
+- * 复审                                          [---]         # ABANDON
+- * 计划                                          [---]         # ABANDON
+- * 船只                                          [---]         # ABAND
+- 企图 *                                          [080]         # ABANDON
+- * 总部                                          [0874]        # ABANDON
+- * &STRONGHOLD                                   [0874]        # ABANDON
+- * 方位                                          [0874]        # EVACUATE
+- * 警戒部队                                      [0874]        # ABANDON
+- * 前哨                                          [0874]        # ABANDON
+- * 边区村落                                      [0874]        # ABANDON
+- * {外国 &PEOPLE}                                [160]         # EVACUATE
+- * 党                                            [160]         # ABANDON
+- * 职员                                          [160]         # EVACUATE
+- * 阵营                                          [160]         # EVACUATE
+- * 角色                                          [160]         # ABANDON
+- * 大使馆                                        [161]         # EVACUATE
+- * &CEASEFIRE                                    [196]         # ABANDON
+
+
+
+---  EVACUATE1   [---]  ---
+疏散 
+安置
+- * &REFUGEE                                      [073]         # EVACUATE
+- * 家庭                                          [073]         # EVACUATE  
+- {医疗} *                                        [074]         # EVACUATE
+- &REFUGEE *                                      [075]         # FLEE
+
+
+---  EVADE   [---]  ---
+逃避
+忽视
+避开
+躲避
+回避
+绕过
+- * 问题                                       [011]         # EVADE
+
+
+
+
+---  EXHIBIT   [---]  ---
+显示
+表现
+呈现
+- * {少许 褪色 迹象}                                  [012]         # SHOW
+- * {少许 褪色}                                       [012]         # SHOW
+- * 怀疑                                              [012]         # DISPLAY
+- * {没有 同情心}                                     [012]         # SHOW
+- * {乐观 画面}                                       [013]         # PRESENT
+- * {乐观 景象}                                       [013]         # PRESENT
+- * 进步                                              [013]         # SHOW
+- * 打击 信心                                              [110]         # SHOW
+- * 恼怒                                              [110]         # SHOW
+- * 证据                                              [1124]        # PRESENT
+- 反对者 * &OPPOSITION                                [141]         # SHOW
+- * {通缉令}                                          [173]         # PRESENT
+ 
+
+
+ 
+ ---  EXHIBIT1   [---]  ---
+出席
+到场
+参加
+介绍 
+- * (签署)                                            [017]         # PRESENT 
+- * &PROPOSAL                                         [020]         # PRESENT
+- * 项目                                              [020]         # PRESENT
+- * 计划                                              [020]         # PRESENT
+- * 计划                                              [027]         # PRESENT
+- * {统一 战线}                                       [050:050]     # PRESENT
+- * 信                                                [040]         # PRESENT
+- * &PROGRAM                                          [060]         # PRESENT
+
+
+
+ ---  EXHIBIT2   [---]  ---
+颁发
+授予
+赠予
+- * {统一 战线}                                       [050:050]     # PRESENT 
+-  * (代表) 证书                                      [050]         # PRESENT 颁发
+- * 内阁                                              [050]         # PRESENT
+- * 国书                                              [051]         # PRESENT
+- * (支持) 演出                                       [051]         # PRESENT
+- * (支持) 展示                                       [051]         # PRESENT
+- * 奖励                                              [051]         # PRESENT
+- * 奖                                                [051]         # PRESENT
+
+
+
+
+---  EXPERIENCE   [---]  ---
+经历
+度过
+经受
+
+
+
+
+---  EXTEND   [---]  ---
+增加
+增大
+扩大
+延长
+- * &CEASEFIRE                                        [081]         # EXTEND
+- * 授权                                              [100]         # EXTEND
+- * &SOLUTION                                         [160]         # EXTEND
+- * {进口 禁令}                                       [163]         # EXTEND
+- * 制裁                                              [163]         # EXTEND
+- * {紧急 状态}                                       [1724]        # EXTEND
+- * 禁令                                              [172]         # EXTEND
+- * &DETENTION                                        [173]         # EXTEND
+- * 控制                                              [192]         # EXTEND
+
+
+---  EXTEND1   [---]  ---
+发出
+伸出
+续约
+给予
+- * 慰问                                              [018]         # EXTEND
+- * 邀请                                              [028]         # EXTEND
+- * 合同                                              [030]         # EXTEND
+- * 橄榄枝                                            [050]         # EXTEND
+- * 感谢                                              [050]         # EXTEND
+- * 祝贺                                              [051]         # EXTEND
+- * 支持                                              [051]         # EXTEND
+- * 特赦                                              [056]         # EXTEND
+- * 援手                                              [070]         # EXTEND
+- * {经济 帮助}                                       [071]         # EXTEND
+- * &CURRENCY                                         [071]         # EXTEND
+- * 贷款                                              [071]         # EXTEND
+- * {&MILITARY 援助}                                  [072]         # EXTEND
+- * {&驻军}                                           [072]         # EXTEND
+- * {人道主义 援助}                                   [073]         # EXTEND
+- * 维和                                              [074]         # EXTEND

@@ -8,7 +8,7 @@ sys.setdefaultencoding('utf-8')
 
 class LTP:
     def __init__(self):
-        model_dir = r'E:\nlpT\ltp.model'
+        model_dir = r'D:\nlpT\ltp.model'
         self.sentenceSplitter = pyltp.SentenceSplitter
         self.segmentor = pyltp.Segmentor()
         self.segmentor.load(os.path.join(model_dir,'cws.model'))

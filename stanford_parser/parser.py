@@ -71,7 +71,7 @@ stanford_parser_home = None
 
 def startJvm():
     import os
-    os.environ.setdefault("STANFORD_PARSER_HOME", r"E:\nlpT\stanford-parser-full-2016-10-31")
+    os.environ.setdefault("STANFORD_PARSER_HOME", r"E:\stanford-parser-full-2016-10-31")
     global stanford_parser_home
     stanford_parser_home = os.environ["STANFORD_PARSER_HOME"]
     stanford_parser_jar = os.path.join(stanford_parser_home, 'stanford-parser.jar')
@@ -95,11 +95,18 @@ class Parser:
         #     self.pcfg_model_fname = pcfg_model_fname
         # assert(os.path.exists(self.pcfg_model_fname))
 
-        jar_path = os.path.join(stanford_parser_home, 'stanford-parser-3.7.0-models.jar')
+        zip_path = os.path.join(stanford_parser_home, 'stanford-parser-3.7.0-models.jar')
         model_path = 'edu/stanford/nlp/models/lexparser/chinesePCFG.ser.gz'
+        # model_path = 'edu/stanford/nlp/models/lexparser/chineseFactored.ser.gz'
         self.package_lexparser = jpype.JPackage("edu.stanford.nlp.parser.lexparser")
-        self.parser = self.package_lexparser.LexicalizedParser.loadModelFromZip(jar_path, model_path)
-        self.package = jpype.JPackage("edu.stanford.nlp")
+        # self.parser = self.package_lexparser.LexicalizedParser.loadModelFromZip(jar_path, model_path)
+
+        # zip_path = r'E:\stanford-parser-full-2016-10-31\model.zip'
+        # model_path = 'chinesePCFG.ser.gz'
+
+        self.parser = self.package_lexparser.LexicalizedParser.loadModelFromZip(zip_path, model_path)
+
+        # self.package = jpype.JPackage("edu.stanford.nlp")
 
         # tokenizerFactoryClass = self.package.process.__getattribute__("PTBTokenizer$PTBTokenizerFactory")
         # self.tokenizerFactory = tokenizerFactoryClass.newPTBTokenizerFactory(True, True)

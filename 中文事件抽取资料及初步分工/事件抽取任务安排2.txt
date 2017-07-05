@@ -1,0 +1,100 @@
+1. 建议再大家仔细看一下模式字典的结构->http://petrarch2.readthedocs.io/en/latest/dictionaries.html#verb-dictionary。
+2. 模式字典分成名词同义词和动词模式两部分，同类名词会有一个统一的标记比如&FOOD，这类标记直接保留，不需翻译。
+3. 动词同义词部分，{}内会标出英文的时态的单复数变形，中文中没有这种变形，直接将{}部分去掉。
+4. 句型部分，整理后的句型满足如下格式：
+	- [Pre-Verb Nouns] [Pre-Verb Prepositoins] * [Post-verb Nouns] [Post-verb prepositions]  # verb
+	且满足：
+		1). 每个句型`#`之后的内容保留
+		2). 中英文句型含义需保持一致
+		3). 除&FOOD之类的标记之外，不含英文单词
+		4). 尽量保留实词，不该出现`的`之类的词
+		5). 形如{}和()之类的成分，括号内最后一个词必须是该成分的中心词
+		6). 成分之间要用空格隔开
+5. 翻译要求：
+	1). 大家看一下CAMEO.eventcodes.txt，事件大体分为20类，每个编码前两位代码该类事件。
+		翻译时大家稍稍留心一下句型能不能反应该事件。
+	2). 翻译可以灵活一点，不一定需要保持前后成分的对应，只要满足格式即可。
+    3). 将`#`后面的动词带进句型翻译
+	4). 每个句型同时用百度，有道，谷歌翻译取最优
+	5). 我们的语境是军事政治事件，翻译时考虑一下语境，可灵活处理
+6. 格式修改：
+	对于动词和介词搭配产生新词义的处理方式进行修改。
+	之前提到的处理方式是，产生的新词义直接加到该block的动词同义词列表，现更改为：
+	若新词义和本block意义相近，直接加到本block；词义差别较大的，新增一个block，必要时可以增加多个block，具体参照我提供的例子。
+7. 任务安排
+	考虑到翻译质量的问题，接下来工作分小组进行。小组内工作流程如下：
+	1). 对于同一部分内容，两人各自进行独立翻译
+    2). 各自翻译完成之后，组内讨论整合翻译结果，去粗取精。
+	总的来说，对每个小组，需要翻译两遍，整合一遍。
+	分组：
+	第一组：罗雅文&时鸿剑
+	第二组：盛文博&张家培
+	第三组：赵田阳&丁瑞雪
+8. 接下来任务：
+	翻译：CAMEO.2.0.txt
+	第一组：line 1013~1313
+	第二组：line 1317~1608
+	第三组：line 1612~1912
+	ddl: 下周二(6月27号)中午12点发到我邮箱wangchangbao@buaa.edu.cn
+8. 这个字典非常重要！
+   下面给了一些例子，大家仔细参考一下。
+
+---  ACCELERATE   [---]  --- ## ---  ACCELERATE   [---]  ---  @保留，不翻译
+ACCELERATE                   ## 加速 加快 促进 增加
+EXPEDITE                     ## 
+HASTEN                       ## 催促
+HURRY {HURRIES HURRYING HURRIED } ## 赶快
+QUICKEN                           ##
+RACE                              ## 
+RUSH                              ## *奔赴* @ ** 表示这个词义是从下面句型中提取出来的，你们翻译的时候不需要**，直接 奔赴 即可。
+SPEED {SPEEDING SPEEDS SPED } ##
+- * (TO)                   [042:043]     # RUSH        ##
+- * AID                    [070]         # RUSH        ## - * 援助           [070]   # RUSH    
+- * {ARMS SHIPMENT}        [072]         # EXPEDITE    ## - * {武器 运输}    [072]   # EXPEDITE    
+                                                       ## - * {武装 运输}    [072]   # EXPEDITE    
+- * {RELIEF ASSISTANCE}    [073]         # RUSH        ## - * 急救           [073]   # RUSH        
+                                                       ## - * {紧急 救援}    [073]   # RUSH        
+- * &FOOD                  [073]         # RUSH        ## - * &FOOD          [073]   # RUSH     
+- * RELIEF                 [073]         # RUSH        ## - * 急救           [073]   # RUSH        
+- * POLICE (TO BORDER)     [153]         # RUSH        ## - 警察 * 边境      [153]   # RUSH @原句大概是‘派遣警察奔赴边境’的意思，调整了一下结构。然后把‘奔赴’这个词加到上面同义词列表
+- * (TO BORDER)            [154]         # RUSH        ## - * 边境           [154]   # RUSH
+- * DEPLOYMENT             [154]         # ACCELERATE  ## - * 部署           [154]   # RUSH 
+- &MILITARY *              [154]         # RUSH        ## - &MILITARY *      [154]   # RUSH         
+- * BUILDUP                [154]         # ACCELERATE  ## - * 建设           [154]   # ACCELERATE  
+- * &WEAPON                [194]         # RUSH        ## - * &WEAPON        [194]   # RUSH
+
+
+
+
+---  ADD   [---]  ---           ## ---  ADD   [---]  --- @ 保留
+ADD  # OY 14 Mar 2006           ## 增加 添加
+- * SANCTIONS                           [163]   ## - * 制裁             [163]   
+- * (TO LIST) (OF {BANNED PARTIES})     [1722]  ## - * {被禁 政党 名单} [1722] 
+- * (TO {BANNED PARTIES}) $             [1722]  ## - * {被禁 政党}      [1722] 
+
+
+
+
+---  ALERT   [---]  --- ## ---  ALERT   [---]  ---
+ALERT  # OY 08 Mar 2006 ## 警告 提醒 警报 警戒
+- * &SECURITY (OVER {&WEAPON ATTACK})  [151]  # ALERT ## - * &SECURITY {&WEAPON 攻击}  [151]  @发出警报防御攻击的意思
+
+
+---  APPEAR   [---]  --- ## ---  APPEAR   [---]  --- 
+APPEAR ## 似乎
+LOOK   ## 
+SEEM   ##
+- * UNCERTAIN                   [012]    # LOOK   ## - * 不确定                   [012]    # LOOK
+- * (TO FUTURE) (WITH OPTIMISM) [013]    # LOOK   ##  @这句意思是'乐观看待未来'，无法调整成前面说的five-part pattern，所以可以去掉
+- * FORWARD                     [013]    # LOOK   ##  @事件编码013表示‘发表正面评价’, 本句型过来就是‘期望’, 表达不了013， 去掉
+- * (FOR HELP)                  [020]    # LOOK   ##  @寻求，意义相差较大，增加block APPEAR1，转到98行
+- * POSITIVELY                  [030]    # LOOK   ## - * 积极                  [030]    # LOOK  
+- * (FOR WAY)                   [032]    # LOOK   ## @转到99行
+- * (INTO ALLEGATION)           [090]    # LOOK   ## @look into 这里是调查的意思，跟‘寻找’有类似的含义，转到100行
+
+---  LOOK1   [---]  --- ## 动词+序号
+寻求
+寻找
+- * 帮助                  [020]    # LOOK  
+- * 方式                  [032]    # LOOK
+- * 调查                  [090]    # LOOK   

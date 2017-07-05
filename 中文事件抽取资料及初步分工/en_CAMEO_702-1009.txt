@@ -1,0 +1,306 @@
+---  ACCELERATE   [---]  --- 
+ACCELERATE
+EXPEDITE
+HASTEN
+HURRY {HURRIES HURRYING HURRIED }
+QUICKEN
+RACE
+RUSH
+SPEED {SPEEDING SPEEDS SPED }
+- * (TO)                                              [042:043]     # RUSH
+- * AID                                               [070]         # RUSH
+- * {ARMS SHIPMENT}                                   [072]         # EXPEDITE
+- * {RELIEF ASSISTANCE}                               [073]         # RUSH
+- * &FOOD                                             [073]         # RUSH
+- * RELIEF                                            [073]         # RUSH
+- * POLICE (TO BORDER)                                [153]         # RUSH
+- * (TO BORDER)                                       [154]         # RUSH
+- * DEPLOYMENT                                        [154]         # ACCELERATE
+- &MILITARY *                                         [154]         # RUSH
+- * BUILDUP                                           [154]         # ACCELERATE
+- * &WEAPON                                           [194]         # RUSH
+
+
+
+
+---  ADD   [---]  ---
+ADD  # OY 14 Mar 2006
+- * SANCTIONS [163]
+- * (TO LIST) (OF {BANNED PARTIES}) [1722]
+- * (TO {BANNED PARTIES}) $                           [1722]        # ADD
+
+
+
+
+---  ALERT   [---]  ---
+ALERT  # OY 08 Mar 2006
+- * &SECURITY (OVER {&WEAPON ATTACK})                 [151]         # ALERT
+
+
+
+
+---  ALLEVIATE   [---]  ---
+ALLEVIATE
+DIMINISH
+
+
+
+
+---  ALTER   [---]  ---
+ALTER
+AMEND
+CHANGE
+MODIFY
+REVISE
+SWITCH
+- * DEAL                                              [031]         # REVISE
+- * CONSTITUTION                                      [0344]        # REVISE
+- * STAND                                             [050]         # CHANGE
+
+
+
+
+---  ANGER   [---]  ---
++ANGERED_BY {}
+ANGER
+ENRAGE
+EXASPERATE
+INCENSE
+INFLAME
+
+
+
+
+---  APPEAR   [---]  ---
+APPEAR
+LOOK
+SEEM
+- * UNCERTAIN                                         [012]         # LOOK
+- * (TO FUTURE) (WITH OPTIMISM)                       [013]         # LOOK
+- * FORWARD                                           [013]         # LOOK
+- * (FOR HELP)                                        [020]         # LOOK
+- * POSITIVELY                                        [030]         # LOOK
+- * (FOR WAY)                                         [032]         # LOOK
+- * (IN FAVOR)                                        [050]         # APPEAR
+- * (INTO ALLEGATION)                                 [090]         # LOOK
+- * (INTO COMPLAINTS)                                 [090]         # LOOK
+- * (INTO CHARGES)                                    [090]         # LOOK
+- * (INTO REPORTS)                                    [090]         # LOOK
+- * (INTO CHARGE)                                     [090]         # LOOK
+- * (INTO DEATH)                                      [090]         # LOOK
+- * (FOR LINK)                                        [090]         # LOOK
+- * (TO PRESS) (FOR OUSTER)                           [1041]        # LOOK
+- * (AT {NEW SANCTIONS})                              [1312]        # LOOK
+- * (IN COURT)                                        [173]         # APPEAR
+- * (BEHIND &WEAPON)                                  [190]         # APPEAR
+- * (BEFORE COURT)                                    [:173]        # APPEAR
+- * (AT HEARING)                                      [:173]        # APPEAR
+
+
+
+
+---  ARRANGE   [---]  ---
+ARRANGE
+BASE  # shan   9/27/93
+FORMAT {FORMATS FORMATTED FORMATTING }
+PLACE  # PAS  9/27/91
+POSE
+POSITION
+POST
+PUT {PUTS PUTTING }  # HUX 11/26/97
+SET
+SITUATE
+STAGE
+STATION
+- * OUT VIEWS                                         [010]         # SET
+- * {REAL THREAT}                                     [012]         # POSE
+- * OUT {NEW STRATEGY}                                [014]         # SET
+- * (TO A VOTE)                                       [014]         # PUT
+- * PRIORITY                                          [014]         # SET
+- * {CANDLELIGHT VIGIL}                               [017]         # STAGE
+- * VIGIL                                             [017]         # STAGE
+- * &PROPOSAL                                         [022]         # PUT
+- * FORWARD {PEACE PLAN}                              [027]         # PUT
+- * (ASIDE RIFT)                                      [030]         # SET
+- * &CEASEFIRE                                        [0356]        # ARRANGE
+- * (TO &TREATY)                                      [035]         # SET
+- * OFF (FOR)                                         [042:043]     # SET
+- * OFF (FROM ^)                                      [042]         # SET
+- * GUIDELINES                                        [045]         # SET
+- * {FINAL TOUCHES}                                   [046]         # PUT
+- * (ASIDE ENMITY)                                    [050:050]     # SET
+- * DEMONSTRATION (IN SOLIDARITY)                     [051]         # STAGE
+- * DEMONSTRATION (IN SUPPORT)                        [051]         # STAGE
+- * PROTEST (IN SOLIDARITY)                           [051]         # STAGE
+- * RALLY (IN SUPPORT)                                [051]         # STAGE
+- &AIRCRAFT * {MOCK ATTACKS}                          [062:062]     # STAGE
+-  &MILITARY * EXERCISES                              [062:062]     # STAGE
+- * {MOCK ATTACK}                                     [062:062]     # STAGE
+- * RETURN                                            [073]         # ARRANGE
+- * FREE                                              [0841]        # SET
+- * &INVESTIGATION                                    [090]         # SET
+- * CONDITIONS                                        [100]         # SET
+- * OFF ROW                                           [110:110]     # SET
+- * UP RESISTANCE                                     [110]         # PUT
+- * HEAT                                              [111]         # PUT
+- * CONDITIONS (BEFORE END)                           [139]         # SET
+- * DEADLINE                                          [139]         # SET
+- * FIRE (TO FLAG)                                    [140]         # SET
+- * (IN PROTEST)                                      [140]         # PUT
+- * STRIKE                                            [140]         # STAGE
+- * DEMONSTRATION                                     [141]         # STAGE
+- * DEMONSTRATION                                     [141]         # STAGE
+- * {MASS RALLY}                                      [141]         # STAGE
+- * PROTEST                                           [141]         # STAGE
+- * RALLIES                                           [141]         # STAGE
+- * RALLY                                             [141]         # STAGE
+- * SIT-IN                                            [141]         # STAGE
+- * STRIKES (UNTIL)                                   [143]         # STAGE
+- * STRIKE                                            [143]         # STAGE
+- * UP BARRICADE                                      [144]         # PUT
+- * FIRE (IN PROTEST)                                 [145]         # SET
+- * HIMSELF (ON FIRE)                                 [145]         # SET
+- * {MOCK ATTACK}                                     [150]         # STAGE
+- * {MOCK RAID}                                       [150]         # STAGE
+- * POLICE (ON ALERT)                                 [151]         # PLACE
+- * {AIR EXERCISE}                                    [151]         # STAGE
+- * (ON ALERT) (ALONG BORDER)                         [152]         # PUT
+- * (ON STATE) (OF ALERT)                             [152]         # PLACE
+- * (ON ALERT)                                        [152]         # PUT
+- * INITIATE (ON HOLD)                                [160]         # PUT
+- * REPATRIATION                                      [160]         # ARRANGE
+- * OFF DECISION                                      [160]         # PUT
+- * OFF LIMITS                                        [160]         # PUT
+- * DIPLOMAT                                          [161]         # BASE
+- * {FINANCIAL SQUEEZE}                               [1621]        # PUT
+- * OFF TALK                                          [164]         # PUT
+- * (UNDER SURVEILLANCE)                              [173]         # PLACE
+- * VERDICT (IN TRIAL)                                [173]         # SET
+- * (IN &DETENTION)                                   [173]         # PLACE
+- * (IN &DETENTION)                                   [173]         # PLACE
+- * (ON TRIAL)                                        [173]         # PUT
+- * (TO DEATH)                                        [173]         # PUT
+- * {FORCE RALLY}                                     [175]         # STAGE
+- * DOWN RIOT                                         [175]         # PUT
+- * (ON FIRE)                                         [180]         # SET
+- * ABLAZE                                            [180]         # SET
+- * AFIRE                                             [180]         # SET
+- * FIRE                                              [180]         # SET
+- * OFF EXPLOSIVE                                     [183]         # SET
+- * OFF &WEAPON                                       [183]         # SET
+- * SERIES (OF ATTACKS)                               [190]         # STAGE
+- * INCURSION (INTO)                                  [190]         # STAGE
+- * ATTACK                                            [190]         # STAGE
+- * RAID                                              [190]         # STAGE
+- * {AIR RAID} (AGAINST)                              [195]         # STAGE
+- &AIRCRAFT * ATTACKS                                 [195]         # STAGE
+- &AIRCRAFT * RAIDS                                   [195]         # STAGE
+- * {AIR OPERATION}                                   [195]         # STAGE
+- &AIRCRAFT * RAID                                    [195]         # STAGE
+
+
+
+
+---  ASK   [---]  ---
++ASK_FOR {+ASKED_FOR +ASKING_FOR +ASKS_FOR} [020]
+ASK     [020]
+ENQUIRE   # OY 25 Jul 2003
+GRILL [110]
+INQUIRE
+INTERROGATE [090]
+INTERVIEW
+PETITION [020]
+QUERY {QUERYING QUERIES QUERIED }
+QUESTION
+REQUEST  [020]
+WONDER
+- * AUTHORISATION                                     [020]         # REQUEST
+- * EXPLANATION                                       [020]         # ASK
+- * PERMISSION                                        [020]         # ASK
+- * ARREST                                            [020]         # REQUEST
+- * SUPPORT                                           [020]         # ASK
+- * HELP                                              [020]         # ASK
+- * INVESTMENT                                        [0211]        # ASK
+- * {JUDICIAL ASSISTANCE}                             [0213]        # REQUEST
+- * (FOR RETRIAL)                                     [0213]        # ASK
+- * EXTRADITION                                       [0213]        # REQUEST
+- * (FOR &SOLUTION) (OF &INVESTIGATION)               [0214]        # ASK
+- * (FOR &INVESTIGATION)                              [0214]        # ASK
+- * &INVESTIGATION                                    [0214]        # REQUEST
+- * &INFORMATION                                      [0214]        # ASK
+- * FILES                                             [0214]        # ASK
+- * {SUPPORT EFFORTS}                                 [022]         # ASK
+- * ASSURANCES                                        [022]         # ASK
+- * SUPPORT                                           [022]         # REQUEST
+- * (FOR {FINANCIAL AID})                             [0231]        # ASK
+- * {DEBT FORGIVENESS}                                [0231]        # ASK
+- * {FINANCIAL HELP}                                  [0231]        # REQUEST
+- * &CURRENCY                                         [0231]        # REQUEST
+- * (FOR {FIGHTER &AIRCRAFT})                         [0232]        # ASK
+- * {&MILITARY AID}                                   [0232]        # ASK
+- * &WEAPON                                           [0232]        # REQUEST
+- * (FOR {HUMANITARIAN AID})                          [0233]        # ASK
+- * {HUMANITARIAN AID}                                [0233]        # ASK
+- * HUMANITARIAN                                      [0233]        # REQUEST
+- * EVACUATION                                        [0233]        # ASK
+- * &ASYLUM                                           [0233]        # ASK
+- * (FOR HELP) (IN &SECURITY)                         [0234]        # ASK
+- * &SECURITY                                         [0234]        # ASK
+- * &PKO                                              [0234]        # ASK
+- * {EMERGENCY ASSISTANCE}                            [023]         # ASK
+- * {TECHNICAL HELP}                                  [023]         # ASK
+- * SUPPLIES                                          [023]         # ASK
+- * AMNESTY                                           [023]         # REQUEST
+- * ASSIST                                            [023]         # REQUEST
+- * LOAN                                              [023]         # REQUEST
+- * AID                                               [023]         # REQUEST
+- * {EARLY ELECTIONS}                                 [0241]        # ASK
+- * WITHDRAWAL                                        [0256]        # ASK
+- * LIFTING (OF IMMUNITY)                             [025]         # REQUEST
+- * (FOR ACCESS)                                      [025]         # ASK
+- * MEETING                                           [026]         # REQUEST
+- * RECONCILIATION                                    [027]         # ASK
+- * INTERVENE                                         [028]         # ASK
+- * MEETING                                           [028]         # ASK
+- * AMNESTY                                           [0351]        # ASK
+- * MEETING                                           [036]         # ASK
+- * INTERVENTION                                      [038]         # REQUEST
+- * FORGIVENESS                                       [055]         # ASK
+- * ALLEGATION                                        [090]         # QUESTION
+- * SUSPICION                                         [090]         # INTERROGATE
+- * &REFUGEE                                          [090]         # INTERVIEW
+- * {FUTURE COALITION}                                [110]         # QUESTION
+- * ASSERTION                                         [110]         # QUESTION
+- * APOLOGY                                           [110]         # ASK
+- * PROMISE                                           [111]         # QUESTION
+- * (AGAINST)                                         [113]         # REQUEST
+- * {DEATH PENALTY} (AGAINST)                         [173]         # REQUEST
+- PROSECUTOR * &DETENTION                             [173]         # REQUEST
+- * SENTENCE                                          [173]         # REQUEST
+
+
+
+
+---  ATTEMPT   [---]  ---
+ATTEMPT  # ab 31 Dec 2005
+- * ASSASSINATION                                     [185]         # ATTEMPT
+
+
+
+
+---  AVERT   [---]  ---
+ABSTAIN
+AVERT
+AVOID
+DEFLECT
+FORFEND
+REFRAIN
+- * INCIDENTS                                         [---]         # AVOID
+- * ATTACK                                            [---]         # AVERT
+- * {AIR_STRIKE}                                      [013]         # AVOID
+- * CLASH                                             [0334]        # AVOID
+- * CRISIS                                            [037]         # AVOID
+- &INFORMATION *                                      [064:064]     # AVERT
+- * (FROM BUSINESS)                                   [1211]        # REFRAIN
+- * ATTEMPT (ON LIFE)                                 [185]         # AVERT
+

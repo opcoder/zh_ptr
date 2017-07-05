@@ -829,12 +829,20 @@ from ltp_utils import ltp_api
 from stanford_parser.parser import Parser
 
 sf_parser = Parser()
+print('stanford parser **********************************')
 def stanford_parse(events):
+    # import time
+    # print('---------------------------------------------')
+    # print (time.time())
     for src, evts in events.items():
         for id, sent in evts['sents'].items():
             content = sent['content']
             seg = ltp_api.segment(content)
-            sent['parsed'] = sf_parser.parser.parse(' '.join(seg)).flatten().toString().replace('IP', 'S').replace(')', ' )')
+            # do not use the fucking flatten() method, it's wrong! e.g. '美国 军舰 11日 在 南沙 海域 被 中国 海军 跟踪 。'
+            # sent['parsed'] = sf_parser.parser.parse(u' '.join(seg)).flatten().toString().replace('IP', 'S').replace(')', ' )')
+            sent['parsed'] = ' '.join(sf_parser.parser.parse(u' '.join(seg)).pennString().split()).replace('IP', 'S').replace(')', ' )')
             # print(' '.join(seg))
     # print('done')
+    # print(time.time())
+    # print ('***********************************')
     return events

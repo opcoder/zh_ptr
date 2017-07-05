@@ -100,11 +100,19 @@ RootPrimer = CodePrimer + ':'  # start of root string
 TextPrimer = CodePrimer + '+'  # start of text string
 
 NounLeafLabels = ['JJ', 'DT', 'NN', 'NR']
+#convert chinese tags to english
 LabelsConverter = {
     'MD': 'VB',
     'DNP': 'NP',
     'VV': 'VB',
     'VA': 'AV',
     'PN': 'PRP',
-    'IP': 'S'
+    'IP': 'S',
+    'LB': 'VLB'
 }
+# phrase tags
+NPLabels = ['NP']
+VPLabels = ['VP']
+PPLabels = ['PP']
+TPLabels = ['TP']
+EXLabels = ['EX']

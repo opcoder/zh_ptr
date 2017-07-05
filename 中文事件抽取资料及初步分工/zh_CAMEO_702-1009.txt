@@ -1,0 +1,59 @@
+---  ACCELERATE   [---]  --- ## ---  ACCELERATE   [---]  ---  @保留，不翻译
+ACCELERATE                   ## 加速 加快 促进 增加
+EXPEDITE                     ## 
+HASTEN                       ## 催促
+HURRY {HURRIES HURRYING HURRIED } ## 赶快
+QUICKEN                           ##
+RACE                              ## 
+RUSH                              ## *奔赴* @ ** 表示这个词义是从下面句型中提取出来的，你们翻译的时候不需要**，直接 奔赴 即可。
+SPEED {SPEEDING SPEEDS SPED } ##
+- * (TO)                   [042:043]     # RUSH        ##
+- * AID                    [070]         # RUSH        ## - * 援助           [070]   # RUSH    
+- * {ARMS SHIPMENT}        [072]         # EXPEDITE    ## - * {武器 运输}    [072]   # EXPEDITE    
+                                                       ## - * {武装 运输}    [072]   # EXPEDITE    
+- * {RELIEF ASSISTANCE}    [073]         # RUSH        ## - * 急救           [073]   # RUSH        
+                                                       ## - * {紧急 救援}    [073]   # RUSH        
+- * &FOOD                  [073]         # RUSH        ## - * &FOOD          [073]   # RUSH     
+- * RELIEF                 [073]         # RUSH        ## - * 急救           [073]   # RUSH        
+- * POLICE (TO BORDER)     [153]         # RUSH        ## - 警察 * 边境      [153]   # RUSH @原句大概是‘派遣警察奔赴边境’的意思，调整了一下结构。然后把‘奔赴’这个词加到上面同义词列表
+- * (TO BORDER)            [154]         # RUSH        ## - * 边境           [154]   # RUSH
+- * DEPLOYMENT             [154]         # ACCELERATE  ## - * 部署           [154]   # RUSH 
+- &MILITARY *              [154]         # RUSH        ## - &MILITARY *      [154]   # RUSH         
+- * BUILDUP                [154]         # ACCELERATE  ## - * 建设           [154]   # ACCELERATE  
+- * &WEAPON                [194]         # RUSH        ## - * &WEAPON        [194]   # RUSH
+
+
+
+
+---  ADD   [---]  ---           ## ---  ADD   [---]  --- @ 保留
+ADD  # OY 14 Mar 2006           ## 增加 添加
+- * SANCTIONS                           [163]   ## - * 制裁             [163]   
+- * (TO LIST) (OF {BANNED PARTIES})     [1722]  ## - * {被禁 政党 名单} [1722] 
+- * (TO {BANNED PARTIES}) $             [1722]  ## - * {被禁 政党}      [1722] 
+
+
+
+
+---  ALERT   [---]  --- ## ---  ALERT   [---]  ---
+ALERT  # OY 08 Mar 2006 ## 警告 提醒 警报 警戒
+- * &SECURITY (OVER {&WEAPON ATTACK})  [151]  # ALERT ## - * &SECURITY {&WEAPON 攻击}  [151]  @发出警报防御攻击的意思
+
+
+---  APPEAR   [---]  --- ## ---  APPEAR   [---]  --- 
+APPEAR ## 似乎
+LOOK   ## 
+SEEM   ##
+- * UNCERTAIN                   [012]    # LOOK   ## - * 不确定                   [012]    # LOOK
+- * (TO FUTURE) (WITH OPTIMISM) [013]    # LOOK   ##  @这句意思是'乐观看待未来'，无法调整成前面说的five-part pattern，所以可以去掉
+- * FORWARD                     [013]    # LOOK   ##  @事件编码013表示‘发表正面评价’, 本句型过来就是‘期望’, 表达不了013， 去掉
+- * (FOR HELP)                  [020]    # LOOK   ##  @寻求，意义相差较大，增加block APPEAR1，转到57行
+- * POSITIVELY                  [030]    # LOOK   ## - * 积极                  [030]    # LOOK  
+- * (FOR WAY)                   [032]    # LOOK   ## @转到58行
+- * (INTO ALLEGATION)           [090]    # LOOK   ## @look into 这里是调查的意思，跟‘寻找’有类似的含义，转到73行
+
+---  LOOK1   [---]  --- ## 动词+序号
+寻求
+寻找
+- * 帮助                  [020]    # LOOK  
+- * 方式                  [032]    # LOOK
+- * 调查                  [090]    # LOOK   
