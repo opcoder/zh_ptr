@@ -842,7 +842,5 @@ def stanford_parse(events):
             # sent['parsed'] = sf_parser.parser.parse(u' '.join(seg)).flatten().toString().replace('IP', 'S').replace(')', ' )')
             sent['parsed'] = ' '.join(sf_parser.parser.parse(u' '.join(seg)).pennString().split()).replace('IP', 'S').replace(')', ' )')
             # print(' '.join(seg))
-    # print('done')
-    # print(time.time())
-    # print ('***********************************')
+    print('stanford_parser done')
     return events
