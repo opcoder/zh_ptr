@@ -72,6 +72,7 @@ class Phrase:
         self.index = -1
         self.head = None
         self.head_phrase = None
+        self.head_leaf = None
         self.color = False
         self.sentence = sentence
 
@@ -234,7 +235,7 @@ class Phrase:
         return list(codes)
 
     def return_head(self):
-        return self.head, self.head_phrase
+        return self.head, self.head_phrase, self.head_leaf
 
     def get_head(self):
         """
@@ -257,14 +258,14 @@ class Phrase:
         self.get_head = self.return_head
         try:
             if self.label == 'S':
-                self.head, self.head_phrase = map(
+                self.head, self.head_phrase, self.head_leaf = map(
                     lambda b: b.get_head(), filter(
                         lambda a: a.label == 'VP', self.children))[0]
-                return (self.head, self.head_phrase)
+                return (self.head, self.head_phrase, self.head_leaf)
             elif self.label == 'ADVP':
-                return self.children[0].text, self
+                return self.children[0].text, self, self.children[0]
             if (not self.label[1] == 'P'):
-                return (self.text, self.parent)
+                return (self.text, self.parent, self)
 
             head_children = filter(
                 lambda child: child.label.startswith(
@@ -285,10 +286,11 @@ class Phrase:
             self.head_phrase = possibilities[-1][1]
             # return the last, English usually compounds words to the front
             self.head = possibilities[-1][0]
+            self.head_leaf =  possibilities[-1][2]
             return possibilities[-1]
 
         except:
-            return (None, None)
+            return (None, None, None)
 
     def print_to_stdout(self, indent):
         print(indent, self.label, self.text, self.get_meaning())
@@ -978,29 +980,29 @@ class VerbPhrase(Phrase):
         """
 # --          print('cp-entry')
         self.check_passive = self.return_passive
-        self.passive = self.children[0].label in ['VLB'] or self.head_phrase.label in ['VLB'] \
-                       or self.head in [u'被', u'遭']
+        self.passive = (self.children and self.children[0].label in ['VLB']) \
+                    or (self.head_leaf and self.head_leaf.label in ['VLB'])
         return self.passive
-        if True:
-            if self.children[0].label in ["VBD", "VBN"]:
-                level = self.parent
-                if level.label == "NP":
-                    self.passive = True
-                    return True
-                for i in range(2):
-                    if level and isinstance(level, VerbPhrase):
-                        if level.children[0].text in [
-                                "AM", "IS", "ARE", "WAS", "WERE", "BE", "BEEN", "BEING"]:
-                            self.passive = True
-                            return True
-                    level = level.parent
-                    if not level:
-                        break
-
-        else:
-            print("Error in passive check")
-        self.passive = False
-        return False
+        # if True:
+        #     if self.children[0].label in ["VBD", "VBN"]:
+        #         level = self.parent
+        #         if level.label == "NP":
+        #             self.passive = True
+        #             return True
+        #         for i in range(2):
+        #             if level and isinstance(level, VerbPhrase):
+        #                 if level.children[0].text in [
+        #                         "AM", "IS", "ARE", "WAS", "WERE", "BE", "BEEN", "BEING"]:
+        #                     self.passive = True
+        #                     return True
+        #             level = level.parent
+        #             if not level:
+        #                 break
+        #
+        # else:
+        #     print("Error in passive check")
+        # self.passive = False
+        # return False
 
     def return_S(self):
         # --          print('rS-entry')
@@ -1391,8 +1393,7 @@ class VerbPhrase(Phrase):
                     noun_phrases.append(phrase)
 
             for item in noun_phrases:
-                head, headphrase = item.get_head()
-
+                head, headphrase, head_leaf = item.get_head()
                 if head and head in path:
                     subpath = path[head]
 
